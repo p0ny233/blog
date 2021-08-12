@@ -108,6 +108,8 @@ deploy:
   type: git
   repo: git@gitee.com:coder_p0ny/blog.git
   branch: master
+  name: git
+  email: p0ny233@88.com
   
   
 algolia:

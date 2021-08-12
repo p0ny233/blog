@@ -1,6 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>CMD 常用命令</title>
+    <url>/blog/2021/05/29/CMD%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h2 id="CMD-命令"><a href="#CMD-命令" class="headerlink" title="CMD 命令"></a>CMD 命令</h2><ul>
+<li><p>打开控制面板</p>
+<p> <code>control</code></p>
+</li>
+<li><p>打开 注册表编辑器</p>
+<p><code>regedit</code></p>
+</li>
+<li><p>打开 远程桌面连接</p>
+<p><code>mstsc</code></p>
+</li>
+<li><p>打开网络连接</p>
+<p> <code>ncpa.cpl</code></p>
+</li>
+<li><p>打开 Internet属性</p>
+<p><code>inetcpl.cpl</code></p>
+</li>
+<li><p>打开 添加删除程序</p>
+<p><code>appwiz.cpl</code></p>
+</li>
+<li><p>打开 系统属性</p>
+<p><code>sysdm.cpl</code></p>
+</li>
+<li><p>打开 防火墙</p>
+<p><code>firewall.cpl</code></p>
+</li>
+<li><p>打开 鼠标属性</p>
+<p><code>main.cpl</code></p>
+</li>
+<li><p>打开 计算机管理</p>
+<p><code>compmgmt.msc</code></p>
+</li>
+<li><p>打开 设备管理器 对话框</p>
+<p><code>devmgmt.msc</code> 或者 <code>hdwwiz.cpl</code></p>
+</li>
+<li><p>打开证书管理器</p>
+<p><code>certmgr.msc</code></p>
+</li>
+<li><p>打开 windows服务</p>
+<p><code>services.msc</code></p>
+</li>
+<li><p>打开本地安全策略</p>
+<p><code>secpol.msc</code></p>
+</li>
+<li><p>打开 本地用户和组 对话框</p>
+<p><code>lusrmgr.msc</code></p>
+</li>
+<li><p>打开 本地组策略编辑器</p>
+<p><code>gpedit.msc</code></p>
+</li>
+<li><p>打开 高级安全 Windows Defender 防火墙【出站入站规则】</p>
+<p><code>wf.msc</code></p>
+</li>
+<li><p>打开 磁盘管理【分盘工具】</p>
+<p><code>diskmgmt.msc</code></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>CMD 常用命令</category>
+      </categories>
+      <tags>
+        <tag>CMD</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ADB无线调试真机</title>
     <url>/blog/2021/06/27/ADB%E6%97%A0%E7%BA%BF%E8%B0%83%E8%AF%95%E7%9C%9F%E6%9C%BA/</url>
     <content><![CDATA[<h1 id="ADB-无线调试安卓真机"><a href="#ADB-无线调试安卓真机" class="headerlink" title="ADB 无线调试安卓真机"></a>ADB 无线调试安卓真机</h1><h3 id="准备条件"><a href="#准备条件" class="headerlink" title="准备条件"></a>准备条件</h3><ol>
@@ -214,73 +281,6 @@
       </tags>
   </entry>
   <entry>
-    <title>CMD 常用命令</title>
-    <url>/blog/2021/05/29/CMD%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h2 id="CMD-命令"><a href="#CMD-命令" class="headerlink" title="CMD 命令"></a>CMD 命令</h2><ul>
-<li><p>打开控制面板</p>
-<p> <code>control</code></p>
-</li>
-<li><p>打开 注册表编辑器</p>
-<p><code>regedit</code></p>
-</li>
-<li><p>打开 远程桌面连接</p>
-<p><code>mstsc</code></p>
-</li>
-<li><p>打开网络连接</p>
-<p> <code>ncpa.cpl</code></p>
-</li>
-<li><p>打开 Internet属性</p>
-<p><code>inetcpl.cpl</code></p>
-</li>
-<li><p>打开 添加删除程序</p>
-<p><code>appwiz.cpl</code></p>
-</li>
-<li><p>打开 系统属性</p>
-<p><code>sysdm.cpl</code></p>
-</li>
-<li><p>打开 防火墙</p>
-<p><code>firewall.cpl</code></p>
-</li>
-<li><p>打开 鼠标属性</p>
-<p><code>main.cpl</code></p>
-</li>
-<li><p>打开 计算机管理</p>
-<p><code>compmgmt.msc</code></p>
-</li>
-<li><p>打开 设备管理器 对话框</p>
-<p><code>devmgmt.msc</code> 或者 <code>hdwwiz.cpl</code></p>
-</li>
-<li><p>打开证书管理器</p>
-<p><code>certmgr.msc</code></p>
-</li>
-<li><p>打开 windows服务</p>
-<p><code>services.msc</code></p>
-</li>
-<li><p>打开本地安全策略</p>
-<p><code>secpol.msc</code></p>
-</li>
-<li><p>打开 本地用户和组 对话框</p>
-<p><code>lusrmgr.msc</code></p>
-</li>
-<li><p>打开 本地组策略编辑器</p>
-<p><code>gpedit.msc</code></p>
-</li>
-<li><p>打开 高级安全 Windows Defender 防火墙【出站入站规则】</p>
-<p><code>wf.msc</code></p>
-</li>
-<li><p>打开 磁盘管理【分盘工具】</p>
-<p><code>diskmgmt.msc</code></p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>CMD 常用命令</category>
-      </categories>
-      <tags>
-        <tag>CMD</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Git配置同时存在Gitee、Github多个账户</title>
     <url>/blog/2021/08/11/Git%E9%85%8D%E7%BD%AE%E5%90%8C%E6%97%B6%E5%AD%98%E5%9C%A8Gitee%E3%80%81Github%E5%A4%9A%E4%B8%AA%E8%B4%A6%E6%88%B7/</url>
     <content><![CDATA[<h1 id="Git配置同时存在Gitee、Github多个账户"><a href="#Git配置同时存在Gitee、Github多个账户" class="headerlink" title="Git配置同时存在Gitee、Github多个账户"></a>Git配置同时存在Gitee、Github多个账户</h1><h3 id="一、清空-Git-的全局配置文件里面的内容"><a href="#一、清空-Git-的全局配置文件里面的内容" class="headerlink" title="一、清空 Git 的全局配置文件里面的内容"></a>一、清空 Git 的全局配置文件里面的内容</h3><blockquote>
@@ -371,7 +371,7 @@
 </blockquote>
 <h3 id="五、在-git-终端测试是否连接成功"><a href="#五、在-git-终端测试是否连接成功" class="headerlink" title="五、在 git 终端测试是否连接成功"></a>五、在 git 终端测试是否连接成功</h3><blockquote>
 <ol>
-<li><p>由于每个托管商的<strong>仓库</strong>都有唯一的后缀，比如 Github 的是 <a href="mailto:&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#46;&#99;&#x6f;&#x6d;">&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#46;&#99;&#x6f;&#x6d;</a>:*。<br>所以可以这样测试：<br><code>ssh -T git@github.com</code></p>
+<li><p>由于每个托管商的<strong>仓库</strong>都有唯一的后缀，比如 Github 的是 <a href="mailto:&#x67;&#105;&#116;&#64;&#x67;&#105;&#x74;&#104;&#x75;&#x62;&#46;&#x63;&#111;&#109;">&#x67;&#105;&#116;&#64;&#x67;&#105;&#x74;&#104;&#x75;&#x62;&#46;&#x63;&#111;&#109;</a>:*。<br>所以可以这样测试：<br><code>ssh -T git@github.com</code></p>
 <p><img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-11/1628683925777-image.png"></p>
 </li>
 </ol>
@@ -448,6 +448,64 @@
       </categories>
       <tags>
         <tag>java JNI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux使用MySQL5.7 过程出现的问题</title>
+    <url>/blog/2021/02/16/Linux%E4%BD%BF%E7%94%A8MySQL5-7-%E8%BF%87%E7%A8%8B%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="Linux使用MySQL5-7-过程出现的问题"><a href="#Linux使用MySQL5-7-过程出现的问题" class="headerlink" title="Linux使用MySQL5.7 过程出现的问题"></a>Linux使用MySQL5.7 过程出现的问题</h1><ol>
+<li><p>执行修改密码命令<br><code>alter user user() identified by &#39;root&#39;;</code><br>或者<br><code>set password for root@localhost = password(&#39;root&#39;);</code>   </p>
+<p> 出现错误信息<br> <code>ERROR 1819 (HY000): Your password does not satisfy the current policy requirements  </code></p>
+<p> 信息上说明设置的密码是弱级别的，需要提高密码强度。</p>
+<p><strong>解决：</strong></p>
+<ul>
+<li>将安全级别设置为 <code>LOW</code> ,如果向将密码设置为 <code>root</code> ,那么还需要更改密码长度  【<strong>默认密码长度为8</strong>，可以设置为其它值，最小4位】<br>  设置安全级别：<br>  <code>set global validate_password_policy=LOW;</code>    更改密码默认长度：<br>  <code>set global validate_password_length=4;</code>  执行以上两条命令之后就可以将密码设置为 <strong>长度为4 的弱密码 比如 root</strong></li>
+</ul>
+</li>
+</ol>
+<ol start="2">
+<li><p>安装MySQL数据库之后使用命令 <code>mysql -uroot -p</code> 让你输入，但是不知道密码怎么办？  </p>
+<ul>
+<li><p><strong>方式 1.</strong> 可直接跳过密码进行登陆   </p>
+<ol>
+<li><p>修改 <code>vi /etc/my.cnf</code> 文件</p>
+</li>
+<li><p>在该文件下的 <strong>[mysqld]模块</strong> 添加以下代码<br><code>skip-grant-tables# 忽略mysql权限问题，直接登录</code><br>如图：</p>
+<p> <img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-5-24/1621832433778-image.png" alt="绕过密码登陆"></p>
+<p> 然后执行命令 <code>systemctl restart mysqld</code> 重启mysql服务<br>再次执行<code>mysql-uroot -p</code> 回车<br>然后提示<strong>输入密码的时候直接敲回车</strong>即可</p>
+</li>
+</ol>
+</li>
+<li><p><strong>方式 2.</strong> 查看默认初始密码  </p>
+<p>  <strong>注意：</strong>：【如果是第一次安装MySQL可以忽略】之前有安装过MySQL数据库并且再次安装MySQL的数据库的需要先将 <code>/var/log/mysqld.log</code> 这个文件删除<br>  <strong>总之就是需要保证没有这个文件 <code>/var/log/mysqld.log</code></strong></p>
+<p>  然后启动MySQL服务<code>systemctl start mysqld</code><br>  此时就会生成此文件 <code>/var/log/mysqld.log</code><br>  然后执行命令 <code>grep &#39;temporary password&#39; /var/log/mysqld.log</code><br>  就可以看到如图所示的内容：</p>
+<p>  <img src="https://imgkr2.cn-bj.ufileos.com/33c2adc2-ab99-409d-8e64-18c4f86393fa.png?UCloudPublicKey=TOKEN_8d8b72be-579a-4e83-bfd0-5f6ce1546f13&Signature=%252BA5dfGEoYYfEDezpdgfIpHqho5w%253D&Expires=1613549719" alt="显示默认密码"></p>
+<p>  <code>mZk=kau!p0Zq</code> 就是默认密码，使用命令<code>mysql -uroot -p</code>,提示输入登陆密码的时候再输入该默认密码，即可登陆成功</p>
+</li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python 解压缩文件【只能压缩文件夹】</title>
+    <url>/blog/2021/05/29/Python%20%E8%A7%A3%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6%E3%80%90%E5%8F%AA%E8%83%BD%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6%E5%A4%B9%E3%80%91/</url>
+    <content><![CDATA[<h3 id="Python-压缩文件夹，解压文件"><a href="#Python-压缩文件夹，解压文件" class="headerlink" title="Python 压缩文件夹，解压文件"></a>Python 压缩文件夹，解压文件</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> shutil</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">base_name : 压缩后的压缩文件名</span></span><br><span class="line"><span class="string">format : 压缩格式：如：`zip`, `tar`, `gztar`, `bztar`, or `xztar`</span></span><br><span class="line"><span class="string">root_dir : 要压缩哪个文件夹就选哪个文件夹 【只能是文件夹，不可以是文件，否则会 抛出 NotADirectoryError】 </span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 压缩文件</span></span><br><span class="line">shutil.make_archive(<span class="string">&#x27;2&#x27;</span>,<span class="built_in">format</span>=<span class="string">&#x27;zip&#x27;</span>,root_dir=<span class="string">&#x27;./Analyse&#x27;</span>)</span><br><span class="line"><span class="comment"># 第一个参数是 base_name</span></span><br><span class="line"><span class="comment"># 第二个参数是 format</span></span><br><span class="line"><span class="comment"># 第三个参数是 root_dir</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;压缩完成&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 解压文件</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">filename：压缩包文件</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">extract_dir：是目标目录的名称，其中包含存档文件，打开包装。如果未提供，则使用当前工作目录,</span></span><br><span class="line"><span class="string"> </span></span><br><span class="line"><span class="string">format：是压缩包格式，如果没有提供那么会根据文件扩展名进行解压</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">shutil.unpack_archive(<span class="string">&#x27;2.zip&#x27;</span>,extract_dir=<span class="string">&#x27;2&#x27;</span>)</span><br><span class="line"><span class="comment"># 会将压缩包的内容解压出来，然后放进一个名称为 2 的文件夹中，</span></span><br><span class="line"><span class="comment"># 如果没有给extract_dir提供，那么会从压缩包中拿出放到当前目录下</span></span><br><span class="line"><span class="comment"># 建议给 extract_dir 提供存放的目录</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;解压成功&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+
+<p><img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-5-29/1622280481947-image.png"></p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -538,21 +596,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Python 解压缩文件【只能压缩文件夹】</title>
-    <url>/blog/2021/05/29/Python%20%E8%A7%A3%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6%E3%80%90%E5%8F%AA%E8%83%BD%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6%E5%A4%B9%E3%80%91/</url>
-    <content><![CDATA[<h3 id="Python-压缩文件夹，解压文件"><a href="#Python-压缩文件夹，解压文件" class="headerlink" title="Python 压缩文件夹，解压文件"></a>Python 压缩文件夹，解压文件</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> shutil</span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">base_name : 压缩后的压缩文件名</span></span><br><span class="line"><span class="string">format : 压缩格式：如：`zip`, `tar`, `gztar`, `bztar`, or `xztar`</span></span><br><span class="line"><span class="string">root_dir : 要压缩哪个文件夹就选哪个文件夹 【只能是文件夹，不可以是文件，否则会 抛出 NotADirectoryError】 </span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 压缩文件</span></span><br><span class="line">shutil.make_archive(<span class="string">&#x27;2&#x27;</span>,<span class="built_in">format</span>=<span class="string">&#x27;zip&#x27;</span>,root_dir=<span class="string">&#x27;./Analyse&#x27;</span>)</span><br><span class="line"><span class="comment"># 第一个参数是 base_name</span></span><br><span class="line"><span class="comment"># 第二个参数是 format</span></span><br><span class="line"><span class="comment"># 第三个参数是 root_dir</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;压缩完成&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 解压文件</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">filename：压缩包文件</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">extract_dir：是目标目录的名称，其中包含存档文件，打开包装。如果未提供，则使用当前工作目录,</span></span><br><span class="line"><span class="string"> </span></span><br><span class="line"><span class="string">format：是压缩包格式，如果没有提供那么会根据文件扩展名进行解压</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">shutil.unpack_archive(<span class="string">&#x27;2.zip&#x27;</span>,extract_dir=<span class="string">&#x27;2&#x27;</span>)</span><br><span class="line"><span class="comment"># 会将压缩包的内容解压出来，然后放进一个名称为 2 的文件夹中，</span></span><br><span class="line"><span class="comment"># 如果没有给extract_dir提供，那么会从压缩包中拿出放到当前目录下</span></span><br><span class="line"><span class="comment"># 建议给 extract_dir 提供存放的目录</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;解压成功&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-
-<p><img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-5-29/1622280481947-image.png"></p>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Windows常用技巧</title>
     <url>/blog/2021/05/29/Windows%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/</url>
     <content><![CDATA[<h4 id="1-手动驱动备份【需要管理员权限】"><a href="#1-手动驱动备份【需要管理员权限】" class="headerlink" title="1. 手动驱动备份【需要管理员权限】"></a>1. 手动驱动备份【需要管理员权限】</h4><blockquote>
@@ -612,46 +655,39 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Linux使用MySQL5.7 过程出现的问题</title>
-    <url>/blog/2021/02/16/Linux%E4%BD%BF%E7%94%A8MySQL5-7-%E8%BF%87%E7%A8%8B%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="Linux使用MySQL5-7-过程出现的问题"><a href="#Linux使用MySQL5-7-过程出现的问题" class="headerlink" title="Linux使用MySQL5.7 过程出现的问题"></a>Linux使用MySQL5.7 过程出现的问题</h1><ol>
-<li><p>执行修改密码命令<br><code>alter user user() identified by &#39;root&#39;;</code><br>或者<br><code>set password for root@localhost = password(&#39;root&#39;);</code>   </p>
-<p> 出现错误信息<br> <code>ERROR 1819 (HY000): Your password does not satisfy the current policy requirements  </code></p>
-<p> 信息上说明设置的密码是弱级别的，需要提高密码强度。</p>
-<p><strong>解决：</strong></p>
-<ul>
-<li>将安全级别设置为 <code>LOW</code> ,如果向将密码设置为 <code>root</code> ,那么还需要更改密码长度  【<strong>默认密码长度为8</strong>，可以设置为其它值，最小4位】<br>  设置安全级别：<br>  <code>set global validate_password_policy=LOW;</code>    更改密码默认长度：<br>  <code>set global validate_password_length=4;</code>  执行以上两条命令之后就可以将密码设置为 <strong>长度为4 的弱密码 比如 root</strong></li>
-</ul>
-</li>
-</ol>
-<ol start="2">
-<li><p>安装MySQL数据库之后使用命令 <code>mysql -uroot -p</code> 让你输入，但是不知道密码怎么办？  </p>
-<ul>
-<li><p><strong>方式 1.</strong> 可直接跳过密码进行登陆   </p>
+    <title>从Gitee仓库拉取原有的 blog</title>
+    <url>/blog/2021/06/01/%E4%BB%8EGitee%E4%BB%93%E5%BA%93%E6%8B%89%E5%8F%96%E5%8E%9F%E6%9C%89%E7%9A%84%20blog/</url>
+    <content><![CDATA[<h2 id="从Gitee仓库拉取原有的-blog"><a href="#从Gitee仓库拉取原有的-blog" class="headerlink" title="从Gitee仓库拉取原有的 blog"></a>从Gitee仓库拉取原有的 blog</h2><blockquote>
 <ol>
-<li><p>修改 <code>vi /etc/my.cnf</code> 文件</p>
-</li>
-<li><p>在该文件下的 <strong>[mysqld]模块</strong> 添加以下代码<br><code>skip-grant-tables# 忽略mysql权限问题，直接登录</code><br>如图：</p>
-<p> <img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-5-24/1621832433778-image.png" alt="绕过密码登陆"></p>
-<p> 然后执行命令 <code>systemctl restart mysqld</code> 重启mysql服务<br>再次执行<code>mysql-uroot -p</code> 回车<br>然后提示<strong>输入密码的时候直接敲回车</strong>即可</p>
-</li>
+<li><code>git clone https://gitee.com/coder_p0ny/blog.git</code> 拉取项目</li>
+<li>另外新建一个文件夹作为 blog 的根目录，然后该目录下是空白的，直接在该目录下 打开 git终端，然后输入命令 <code>hexo init</code> 初始化 hexo,生成 blog 模板，然后再将第一步拉取的blog中的所有文件复制到新建的文件夹中，替换所有相同的文件</li>
+<li>然后执行命令 <code>hexo s --debug</code>  开启服务</li>
+<li>浏览器访问 <code>http://localhost:4000</code> 即可</li>
 </ol>
-</li>
-<li><p><strong>方式 2.</strong> 查看默认初始密码  </p>
-<p>  <strong>注意：</strong>：【如果是第一次安装MySQL可以忽略】之前有安装过MySQL数据库并且再次安装MySQL的数据库的需要先将 <code>/var/log/mysqld.log</code> 这个文件删除<br>  <strong>总之就是需要保证没有这个文件 <code>/var/log/mysqld.log</code></strong></p>
-<p>  然后启动MySQL服务<code>systemctl start mysqld</code><br>  此时就会生成此文件 <code>/var/log/mysqld.log</code><br>  然后执行命令 <code>grep &#39;temporary password&#39; /var/log/mysqld.log</code><br>  就可以看到如图所示的内容：</p>
-<p>  <img src="https://imgkr2.cn-bj.ufileos.com/33c2adc2-ab99-409d-8e64-18c4f86393fa.png?UCloudPublicKey=TOKEN_8d8b72be-579a-4e83-bfd0-5f6ce1546f13&Signature=%252BA5dfGEoYYfEDezpdgfIpHqho5w%253D&Expires=1613549719" alt="显示默认密码"></p>
-<p>  <code>mZk=kau!p0Zq</code> 就是默认密码，使用命令<code>mysql -uroot -p</code>,提示输入登陆密码的时候再输入该默认密码，即可登陆成功</p>
-</li>
-</ul>
-</li>
-</ol>
+</blockquote>
 ]]></content>
       <categories>
-        <category>数据库</category>
+        <category>Git</category>
       </categories>
       <tags>
-        <tag>MySQL</tag>
+        <tag>Git hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>清除BIOS界面密码</title>
+    <url>/blog/2021/07/23/%E6%B8%85%E9%99%A4BIOS%E7%95%8C%E9%9D%A2%E5%AF%86%E7%A0%81/</url>
+    <content><![CDATA[<h2 id="笔记本电脑设置BIOS界面密码，但是密码忘记了"><a href="#笔记本电脑设置BIOS界面密码，但是密码忘记了" class="headerlink" title="笔记本电脑设置BIOS界面密码，但是密码忘记了"></a>笔记本电脑设置BIOS界面密码，但是密码忘记了</h2><blockquote>
+<blockquote>
+<p>bios密码可以通过下面的网站解决，<br>把bios界面上显示的几位输入网站内，之后网站会给你一组，一定要<strong>区分好大小写</strong>，之后<strong>输入到密码输入框当中按Ctrl+回车</strong> 轻松解决</p>
+</blockquote>
+</blockquote>
+<p><code>https://bios-pw.org/</code></p>
+]]></content>
+      <categories>
+        <category>Windows常用技巧</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>
@@ -718,39 +754,66 @@
       </tags>
   </entry>
   <entry>
-    <title>清除BIOS界面密码</title>
-    <url>/blog/2021/07/23/%E6%B8%85%E9%99%A4BIOS%E7%95%8C%E9%9D%A2%E5%AF%86%E7%A0%81/</url>
-    <content><![CDATA[<h2 id="笔记本电脑设置BIOS界面密码，但是密码忘记了"><a href="#笔记本电脑设置BIOS界面密码，但是密码忘记了" class="headerlink" title="笔记本电脑设置BIOS界面密码，但是密码忘记了"></a>笔记本电脑设置BIOS界面密码，但是密码忘记了</h2><blockquote>
+    <title>Android Studio 配置问题 &gt; The specified Gradle distribution</title>
+    <url>/blog/2021/08/12/Android%20Studio%20%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98%20_The_specified_Gradle_distribution/</url>
+    <content><![CDATA[<h1 id="Android-Studio-配置问题-gt-The-specified-Gradle-distribution"><a href="#Android-Studio-配置问题-gt-The-specified-Gradle-distribution" class="headerlink" title="Android Studio 配置问题 &gt; The specified Gradle distribution"></a>Android Studio 配置问题 &gt; The specified Gradle distribution</h1><h4 id="问题如下"><a href="#问题如下" class="headerlink" title="问题如下"></a>问题如下</h4><blockquote>
+<p>一般这种情况是由于 <strong>拉取别人的项目</strong> 然后 <strong>在自己的电脑中导入</strong> 发生的</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">The specified Gradle distribution &#x27;file:///E:/DevelopKitTools/Android_Studio/gradle/wrapper/dists/gradle-6.5-all/2oz4ud9k3tuxjg84bbf55q0tn/gradle-5.4-all.zip&#x27; does not exist.</span><br></pre></td></tr></table></figure>
+<p>导入项目之前的配置文件内容如下：<br>   <img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-12/1628759295229-image.png"></p>
+<p><strong>注意其中的classpath字段的值：<code>com.android.tools.build:gradle:3.4.0</code><strong>，表明：</strong>Android Gradle Plugin Version 的版本号：3.4.0</strong>   </p>
+<p>会自动下载，但是这里需要断掉它，因为本机没有 <code>gradle-5.1.1-bin.zip</code> 文件,这里的思路是把 配置文件 修改成 本机上有的<code>gradle-5.4.1-all.zip</code> </p>
+</blockquote>
 <blockquote>
-<p>bios密码可以通过下面的网站解决，<br>把bios界面上显示的几位输入网站内，之后网站会给你一组，一定要<strong>区分好大小写</strong>，之后<strong>输入到密码输入框当中按Ctrl+回车</strong> 轻松解决</p>
-</blockquote>
-</blockquote>
-<p><code>https://bios-pw.org/</code></p>
-]]></content>
-      <categories>
-        <category>Windows常用技巧</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>从Gitee仓库拉取原有的 blog</title>
-    <url>/blog/2021/06/01/%E4%BB%8EGitee%E4%BB%93%E5%BA%93%E6%8B%89%E5%8F%96%E5%8E%9F%E6%9C%89%E7%9A%84%20blog/</url>
-    <content><![CDATA[<h2 id="从Gitee仓库拉取原有的-blog"><a href="#从Gitee仓库拉取原有的-blog" class="headerlink" title="从Gitee仓库拉取原有的 blog"></a>从Gitee仓库拉取原有的 blog</h2><blockquote>
+<p>所有这里只需要分别修改两个文件</p>
 <ol>
-<li><code>git clone https://gitee.com/coder_p0ny/blog.git</code> 拉取项目</li>
-<li>另外新建一个文件夹作为 blog 的根目录，然后该目录下是空白的，直接在该目录下 打开 git终端，然后输入命令 <code>hexo init</code> 初始化 hexo,生成 blog 模板，然后再将第一步拉取的blog中的所有文件复制到新建的文件夹中，替换所有相同的文件</li>
-<li>然后执行命令 <code>hexo s --debug</code>  开启服务</li>
-<li>浏览器访问 <code>http://localhost:4000</code> 即可</li>
+<li><code>F:\TempCode\项目名\build.gradle</code><br>我这里的路径是：<code>F:\TempCode\MyApplicationqqLogin\build.gradle</code></li>
+<li><code>F:\TempCode\项目名\gradle\wrapper\gradle-wrapper.properties</code><br>我这里的路径是：<code>F:\TempCode\MyApplicationqqLogin\gradle\wrapper\gradle-wrapper.properties</code></li>
 </ol>
 </blockquote>
+<blockquote>
+<p>gradle 对应版本<code>https://developer.android.com/studio/releases/gradle-plugin?hl=zh-cn</code>   </p>
+<p>从上面的网址可以知道 <code>gradle-5.4.1-all.zip</code> 对应的 gradle插件版本：<code>3.5.0 - 3.5.4</code>   </p>
+<p><code>build.gradle</code> 文件内容如下：</p>
+<figure class="highlight gradle"><table><tr><td class="code"><pre><span class="line">&gt;<span class="comment">// Top-level build file where you can add configuration options common to all sub-projects/modules.</span></span><br><span class="line"></span><br><span class="line">&gt;<span class="keyword">buildscript</span> &#123;</span><br><span class="line">   <span class="keyword">repositories</span> &#123;</span><br><span class="line">       google()</span><br><span class="line">       jcenter()</span><br><span class="line">       </span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">dependencies</span> &#123;</span><br><span class="line">       <span class="keyword">classpath</span> <span class="string">&#x27;com.android.tools.build:gradle:3.4.0&#x27;</span></span><br><span class="line">       </span><br><span class="line">       <span class="comment">// <span class="doctag">NOTE:</span> Do not place your application dependencies here; they belong</span></span><br><span class="line">       <span class="comment">// in the individual module build.gradle files</span></span><br><span class="line">   &#125;</span><br><span class="line">&gt;&#125;</span><br><span class="line"></span><br><span class="line">&gt;<span class="keyword">allprojects</span> &#123;</span><br><span class="line">   <span class="keyword">repositories</span> &#123;</span><br><span class="line">       google()</span><br><span class="line">       jcenter()</span><br><span class="line">       </span><br><span class="line">   &#125;</span><br><span class="line">&gt;&#125;</span><br><span class="line"></span><br><span class="line">&gt;<span class="keyword">task</span> clean(type: <span class="keyword">Delete</span>) &#123;</span><br><span class="line">   <span class="keyword">delete</span> rootProject.buildDir</span><br><span class="line">&gt;&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</blockquote>
+<h3 id="修改-build-gradle-文件后的内容如下："><a href="#修改-build-gradle-文件后的内容如下：" class="headerlink" title="修改 build.gradle 文件后的内容如下："></a>修改 build.gradle 文件后的内容如下：</h3><blockquote>
+<figure class="highlight gradle"><table><tr><td class="code"><pre><span class="line">&gt;<span class="comment">// Top-level build file where you can add configuration options common to all sub-projects/modules.</span></span><br><span class="line"></span><br><span class="line">&gt;<span class="keyword">buildscript</span> &#123;</span><br><span class="line">   <span class="keyword">repositories</span> &#123;</span><br><span class="line">       google()</span><br><span class="line">       jcenter()</span><br><span class="line">       </span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">dependencies</span> &#123;</span><br><span class="line">       <span class="keyword">classpath</span> <span class="string">&#x27;com.android.tools.build:gradle:3.5.4&#x27;</span></span><br><span class="line">       </span><br><span class="line">       <span class="comment">// <span class="doctag">NOTE:</span> Do not place your application dependencies here; they belong</span></span><br><span class="line">       <span class="comment">// in the individual module build.gradle files</span></span><br><span class="line">   &#125;</span><br><span class="line">&gt;&#125;</span><br><span class="line"></span><br><span class="line">&gt;<span class="keyword">allprojects</span> &#123;</span><br><span class="line">   <span class="keyword">repositories</span> &#123;</span><br><span class="line">       google()</span><br><span class="line">       jcenter()</span><br><span class="line">       </span><br><span class="line">   &#125;</span><br><span class="line">&gt;&#125;</span><br><span class="line"></span><br><span class="line">&gt;<span class="keyword">task</span> clean(type: <span class="keyword">Delete</span>) &#123;</span><br><span class="line">   <span class="keyword">delete</span> rootProject.buildDir</span><br><span class="line">&gt;&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+</blockquote>
+<blockquote>
+<p><code>gradle-wrapper.properties</code> 文件内容如下：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">&gt;#Sun</span> <span class="string">Jun</span> <span class="number">20</span> <span class="number">14</span><span class="string">:54:20</span> <span class="string">CST</span> <span class="number">2021</span></span><br><span class="line"><span class="string">&gt;distributionBase=GRADLE_USER_HOME</span></span><br><span class="line"><span class="string">&gt;distributionPath=wrapper/dists</span></span><br><span class="line"><span class="string">&gt;zipStoreBase=GRADLE_USER_HOME</span></span><br><span class="line"><span class="string">&gt;zipStorePath=wrapper/dists</span></span><br><span class="line"><span class="string">&gt;distributionUrl=https\://services.gradle.org/distributions/gradle-5.1.1-all.zip</span></span><br></pre></td></tr></table></figure>
+
+</blockquote>
+<h3 id="修改-gradle-wrapper-properties-文件后的内容如下："><a href="#修改-gradle-wrapper-properties-文件后的内容如下：" class="headerlink" title="修改 gradle-wrapper.properties 文件后的内容如下："></a>修改 gradle-wrapper.properties 文件后的内容如下：</h3><blockquote>
+<p><code>gradle-wrapper.properties</code> 文件内容如下：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">&gt;#Sun</span> <span class="string">Jun</span> <span class="number">20</span> <span class="number">14</span><span class="string">:54:20</span> <span class="string">CST</span> <span class="number">2021</span></span><br><span class="line"><span class="string">&gt;distributionBase=GRADLE_USER_HOME</span></span><br><span class="line"><span class="string">&gt;distributionPath=wrapper/dists</span></span><br><span class="line"><span class="string">&gt;zipStoreBase=GRADLE_USER_HOME</span></span><br><span class="line"><span class="string">&gt;zipStorePath=wrapper/dists</span></span><br><span class="line"><span class="string">&gt;distributionUrl=file:///E:/DevelopKitTools/Android_Studio/gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1-all.zip</span></span><br></pre></td></tr></table></figure>
+</blockquote>
+<p><img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-12/1628760070992-image.png" alt="gradle插件对应的版本"></p>
+<p><img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-12/1628757287484-image.png" alt="The specified Gradle distribution"></p>
+<h3 id="删除-gradle-这个文件-【重点】"><a href="#删除-gradle-这个文件-【重点】" class="headerlink" title="删除 .gradle 这个文件 【重点】"></a>删除 <code>.gradle</code> 这个文件 【重点】</h3><ol>
+<li><p>右键 <code>.gradle</code> 文件夹，然后  点击删除<br><img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-12/1628769357516-image.png"></p>
+</li>
+<li><p>点击 <code>file</code> &gt; <code>Invalidate Claches / Restart</code></p>
+</li>
+</ol>
+<p><img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-12/1628769498403-image.png"></p>
+<ol start="3">
+<li>最后 点击 弹框的 <code>Invalidate and Restart</code></li>
+</ol>
+<p><img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-12/1628769519191-image.png"></p>
+<ol start="4">
+<li>等待。。。就好了</li>
+</ol>
+<p>注意整个项目的路径是需要放到 <strong>没有中文的路径的</strong>否则报错如图：</p>
+<p><img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-12/1628769770869-image.png"></p>
+<p>解决方式就是：把项目安排到没有中文路径的即可</p>
 ]]></content>
       <categories>
-        <category>Git</category>
+        <category>AS</category>
       </categories>
       <tags>
-        <tag>Git hexo</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
 </search>

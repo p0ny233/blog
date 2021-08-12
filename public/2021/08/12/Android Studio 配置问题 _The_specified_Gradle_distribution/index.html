@@ -6,7 +6,7 @@
     <meta name="referrer" content="origin">
     <meta http-equiv="Cache-Control" content="no-transform">
     <meta http-equiv="Cache-Control" content="no-siteapp">
-    <title>标签 - Git</title>
+    <title>Android Studio 配置问题 &gt; The specified Gradle distribution</title>
 
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/LongCang.css">
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/Monda.css">
@@ -17,126 +17,152 @@
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/Rosario.css">
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/UbuntuMono.css">
 
-    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/index.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/post.css">
+    
+        <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/normal.css">
+    
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/jquery-3.4.1.min.js"></script>
+
 </head>
 <body>
     <a id="cover"></a>
     <div id="header">
-    <div class="header" >
+    <div class="header">
         <div class="vertical">
             <div class="inner">
-                <h1 class="header-title"></h1>
-                <h2 class="header-description" id="hitokoto"></h2>
-                <h3 class="header-info" id="hitokotoAuthor"></h3>
-                <!--
-                <h1 class="header-subtitle"></h1>
-                <p class="header-subinfo"></p>
-                -->
+                <h1 class="header-subtitle">Android Studio 配置问题 > The specified Gradle distribution</h1>
+                <div class="header-subinfo">
+                    <p class="article-info-text">
+                        <span>
+                            <i class="iconfont icon-time"></i> 发表时间：2021-08-12
+                        </span>
+                        
+                            <span id="/2021/08/12/Android Studio 配置问题 _The_specified_Gradle_distribution/" class="leancloud_visitors" data-flag-title="Android Studio 配置问题 > The specified Gradle distribution">
+                                <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
+                            </span>
+                        
+                        <span>
+                            <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/2021/08/12/Android Studio 配置问题 _The_specified_Gradle_distribution/"></span>
+                        </span>  
+                    </p>                 
+                </div>
             </div>
         </div>
-        <a class="scroll-down" href="javascript:;" target="_self" data-offset="-45">
-            <span class="hidden">Scroll Down</span>
-            <i class="scroll-down-icon iconfont icon-return"></i>
-        </a>
+        <canvas id="articleHeaderCanvas"></canvas>
     </div>
 </div>
     <div id="container">
     <div id="content">
-        <div class="articles">
-    
-        <div class="article">
-            <div class="article-title">
-                <a href="/blog/2021/08/12/Android%20Studio%20%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98%20_The_specified_Gradle_distribution/">Android Studio 配置问题 &gt; The specified Gradle distribution</a>
-                
-                    <span class="article-sticky">置顶</span>
-                
+        <div id="article">
+    <div class="toc"></div>
+    <div class="article-body">
+        <h1 id="Android-Studio-配置问题-gt-The-specified-Gradle-distribution"><a href="#Android-Studio-配置问题-gt-The-specified-Gradle-distribution" class="headerlink" title="Android Studio 配置问题 &gt; The specified Gradle distribution"></a>Android Studio 配置问题 &gt; The specified Gradle distribution</h1><h4 id="问题如下"><a href="#问题如下" class="headerlink" title="问题如下"></a>问题如下</h4><blockquote>
+<p>一般这种情况是由于 <strong>拉取别人的项目</strong> 然后 <strong>在自己的电脑中导入</strong> 发生的</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">The specified Gradle distribution &#x27;file:///E:/DevelopKitTools/Android_Studio/gradle/wrapper/dists/gradle-6.5-all/2oz4ud9k3tuxjg84bbf55q0tn/gradle-5.4-all.zip&#x27; does not exist.</span><br></pre></td></tr></table></figure>
+<p>导入项目之前的配置文件内容如下：<br>   <img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-12/1628759295229-image.png"></p>
+<p><strong>注意其中的classpath字段的值：<code>com.android.tools.build:gradle:3.4.0</code><strong>，表明：</strong>Android Gradle Plugin Version 的版本号：3.4.0</strong>   </p>
+<p>会自动下载，但是这里需要断掉它，因为本机没有 <code>gradle-5.1.1-bin.zip</code> 文件,这里的思路是把 配置文件 修改成 本机上有的<code>gradle-5.4.1-all.zip</code> </p>
+</blockquote>
+<blockquote>
+<p>所有这里只需要分别修改两个文件</p>
+<ol>
+<li><code>F:\TempCode\项目名\build.gradle</code><br>我这里的路径是：<code>F:\TempCode\MyApplicationqqLogin\build.gradle</code></li>
+<li><code>F:\TempCode\项目名\gradle\wrapper\gradle-wrapper.properties</code><br>我这里的路径是：<code>F:\TempCode\MyApplicationqqLogin\gradle\wrapper\gradle-wrapper.properties</code></li>
+</ol>
+</blockquote>
+<blockquote>
+<p>gradle 对应版本<code>https://developer.android.com/studio/releases/gradle-plugin?hl=zh-cn</code>   </p>
+<p>从上面的网址可以知道 <code>gradle-5.4.1-all.zip</code> 对应的 gradle插件版本：<code>3.5.0 - 3.5.4</code>   </p>
+<p><code>build.gradle</code> 文件内容如下：</p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="comment">// Top-level build file where you can add configuration options common to all sub-projects/modules.</span></span><br><span class="line"></span><br><span class="line">&gt;<span class="keyword">buildscript</span> &#123;</span><br><span class="line">   <span class="keyword">repositories</span> &#123;</span><br><span class="line">       google()</span><br><span class="line">       jcenter()</span><br><span class="line">       </span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">dependencies</span> &#123;</span><br><span class="line">       <span class="keyword">classpath</span> <span class="string">&#x27;com.android.tools.build:gradle:3.4.0&#x27;</span></span><br><span class="line">       </span><br><span class="line">       <span class="comment">// <span class="doctag">NOTE:</span> Do not place your application dependencies here; they belong</span></span><br><span class="line">       <span class="comment">// in the individual module build.gradle files</span></span><br><span class="line">   &#125;</span><br><span class="line">&gt;&#125;</span><br><span class="line"></span><br><span class="line">&gt;<span class="keyword">allprojects</span> &#123;</span><br><span class="line">   <span class="keyword">repositories</span> &#123;</span><br><span class="line">       google()</span><br><span class="line">       jcenter()</span><br><span class="line">       </span><br><span class="line">   &#125;</span><br><span class="line">&gt;&#125;</span><br><span class="line"></span><br><span class="line">&gt;<span class="keyword">task</span> clean(type: <span class="keyword">Delete</span>) &#123;</span><br><span class="line">   <span class="keyword">delete</span> rootProject.buildDir</span><br><span class="line">&gt;&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</blockquote>
+<h3 id="修改-build-gradle-文件后的内容如下："><a href="#修改-build-gradle-文件后的内容如下：" class="headerlink" title="修改 build.gradle 文件后的内容如下："></a>修改 build.gradle 文件后的内容如下：</h3><blockquote>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="comment">// Top-level build file where you can add configuration options common to all sub-projects/modules.</span></span><br><span class="line"></span><br><span class="line">&gt;<span class="keyword">buildscript</span> &#123;</span><br><span class="line">   <span class="keyword">repositories</span> &#123;</span><br><span class="line">       google()</span><br><span class="line">       jcenter()</span><br><span class="line">       </span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">dependencies</span> &#123;</span><br><span class="line">       <span class="keyword">classpath</span> <span class="string">&#x27;com.android.tools.build:gradle:3.5.4&#x27;</span></span><br><span class="line">       </span><br><span class="line">       <span class="comment">// <span class="doctag">NOTE:</span> Do not place your application dependencies here; they belong</span></span><br><span class="line">       <span class="comment">// in the individual module build.gradle files</span></span><br><span class="line">   &#125;</span><br><span class="line">&gt;&#125;</span><br><span class="line"></span><br><span class="line">&gt;<span class="keyword">allprojects</span> &#123;</span><br><span class="line">   <span class="keyword">repositories</span> &#123;</span><br><span class="line">       google()</span><br><span class="line">       jcenter()</span><br><span class="line">       </span><br><span class="line">   &#125;</span><br><span class="line">&gt;&#125;</span><br><span class="line"></span><br><span class="line">&gt;<span class="keyword">task</span> clean(type: <span class="keyword">Delete</span>) &#123;</span><br><span class="line">   <span class="keyword">delete</span> rootProject.buildDir</span><br><span class="line">&gt;&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+</blockquote>
+<blockquote>
+<p><code>gradle-wrapper.properties</code> 文件内容如下：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&gt;#Sun</span> <span class="string">Jun</span> <span class="number">20</span> <span class="number">14</span><span class="string">:54:20</span> <span class="string">CST</span> <span class="number">2021</span></span><br><span class="line"><span class="string">&gt;distributionBase=GRADLE_USER_HOME</span></span><br><span class="line"><span class="string">&gt;distributionPath=wrapper/dists</span></span><br><span class="line"><span class="string">&gt;zipStoreBase=GRADLE_USER_HOME</span></span><br><span class="line"><span class="string">&gt;zipStorePath=wrapper/dists</span></span><br><span class="line"><span class="string">&gt;distributionUrl=https\://services.gradle.org/distributions/gradle-5.1.1-all.zip</span></span><br></pre></td></tr></table></figure>
+
+</blockquote>
+<h3 id="修改-gradle-wrapper-properties-文件后的内容如下："><a href="#修改-gradle-wrapper-properties-文件后的内容如下：" class="headerlink" title="修改 gradle-wrapper.properties 文件后的内容如下："></a>修改 gradle-wrapper.properties 文件后的内容如下：</h3><blockquote>
+<p><code>gradle-wrapper.properties</code> 文件内容如下：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&gt;#Sun</span> <span class="string">Jun</span> <span class="number">20</span> <span class="number">14</span><span class="string">:54:20</span> <span class="string">CST</span> <span class="number">2021</span></span><br><span class="line"><span class="string">&gt;distributionBase=GRADLE_USER_HOME</span></span><br><span class="line"><span class="string">&gt;distributionPath=wrapper/dists</span></span><br><span class="line"><span class="string">&gt;zipStoreBase=GRADLE_USER_HOME</span></span><br><span class="line"><span class="string">&gt;zipStorePath=wrapper/dists</span></span><br><span class="line"><span class="string">&gt;distributionUrl=file:///E:/DevelopKitTools/Android_Studio/gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1-all.zip</span></span><br></pre></td></tr></table></figure>
+</blockquote>
+<p><img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-12/1628760070992-image.png" alt="gradle插件对应的版本"></p>
+<p><img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-12/1628757287484-image.png" alt="The specified Gradle distribution"></p>
+<h3 id="删除-gradle-这个文件-【重点】"><a href="#删除-gradle-这个文件-【重点】" class="headerlink" title="删除 .gradle 这个文件 【重点】"></a>删除 <code>.gradle</code> 这个文件 【重点】</h3><ol>
+<li><p>右键 <code>.gradle</code> 文件夹，然后  点击删除<br><img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-12/1628769357516-image.png"></p>
+</li>
+<li><p>点击 <code>file</code> &gt; <code>Invalidate Claches / Restart</code></p>
+</li>
+</ol>
+<p><img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-12/1628769498403-image.png"></p>
+<ol start="3">
+<li>最后 点击 弹框的 <code>Invalidate and Restart</code></li>
+</ol>
+<p><img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-12/1628769519191-image.png"></p>
+<ol start="4">
+<li>等待。。。就好了</li>
+</ol>
+<p>注意整个项目的路径是需要放到 <strong>没有中文的路径的</strong>否则报错如图：</p>
+<p><img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-12/1628769770869-image.png"></p>
+<p>解决方式就是：把项目安排到没有中文路径的即可</p>
+
+        <p class="suffix-end">__END__</p>
+        <div class="suffix-box">
+            <div class="suffix-box-left">
+                <img src="https://s3.ax1x.com/2021/02/15/y60dRU.jpg" alt="p0ny">
             </div>
-            <div class="article-abstract">
-                
-                    摘要：The specified Gradle distribution
-                    <a href="/blog/2021/08/12/Android%20Studio%20%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98%20_The_specified_Gradle_distribution/">阅读全文</a>
-                
+            <div class="suffix-box-right">
+                <span class="suffix-box-title">文章作者</span>：p0ny
+                <br>
+                <span class="suffix-box-title">文章出处</span>：<a href="/blog/2021/08/12/Android%20Studio%20%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98%20_The_specified_Gradle_distribution/" target="_blank">原创</a>
+                <br>
+                <span class="suffix-box-title">作者签名</span>：一穷二白
+                <br>
+                <span class="suffix-box-title">关于主题</span>：<a href="https://github.com/first19326/Hexo-LiveForCode" target="_blank">p0ny</a>
+                <br>
+                <span class="suffix-box-title">版权声明</span>：文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" title="BY-NC-SA" target="_blank">BY-NC-SA</a> 许可协议，转载请注明出处
+                <br>
             </div>
-            <div class="clear"></div>
-            <div class="article-info">
-                <span>
-                    <i class="iconfont icon-time"></i> 发表时间：2021-08-12
-                </span>
-                
-                    <span id="/2021/08/12/Android Studio 配置问题 _The_specified_Gradle_distribution/" class="leancloud_visitors" data-flag-title="Android Studio 配置问题 > The specified Gradle distribution">
-                        <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
-                    </span>
-                
-                <span>
-                    <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/2021/08/12/Android Studio 配置问题 _The_specified_Gradle_distribution/"></span>
-                </span>
-            </div>
-            <div class="clear"></div>     
+            <div style="clear: both;"></div>
         </div>
-    
-        <div class="article">
-            <div class="article-title">
-                <a href="/blog/2021/08/11/Git%E9%85%8D%E7%BD%AE%E5%90%8C%E6%97%B6%E5%AD%98%E5%9C%A8Gitee%E3%80%81Github%E5%A4%9A%E4%B8%AA%E8%B4%A6%E6%88%B7/">Git配置同时存在Gitee、Github多个账户</a>
+    </div>
+    <div class="article-footer">
+        
+            <div class="category">
+                分类：
                 
-                    <span class="article-sticky">置顶</span>
-                
-            </div>
-            <div class="article-abstract">
-                
-                    摘要：Git配置同时存在Gitee、Github多个账户
-                    <a href="/blog/2021/08/11/Git%E9%85%8D%E7%BD%AE%E5%90%8C%E6%97%B6%E5%AD%98%E5%9C%A8Gitee%E3%80%81Github%E5%A4%9A%E4%B8%AA%E8%B4%A6%E6%88%B7/">阅读全文</a>
+                    <a href="/blog/categories/AS/">AS</a>
                 
             </div>
-            <div class="clear"></div>
-            <div class="article-info">
-                <span>
-                    <i class="iconfont icon-time"></i> 发表时间：2021-08-11
-                </span>
+        
+        
+            <div class="tag">
+                标签：
                 
-                    <span id="/2021/08/11/Git配置同时存在Gitee、Github多个账户/" class="leancloud_visitors" data-flag-title="Git配置同时存在Gitee、Github多个账户">
-                        <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
-                    </span>
+                    <a href="/blog/tags/Git/">Git</a>
                 
-                <span>
-                    <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/2021/08/11/Git配置同时存在Gitee、Github多个账户/"></span>
-                </span>
             </div>
-            <div class="clear"></div>     
+        
+        <div class="article-prev-next">
+            
+            
+                <a href="/blog/2021/08/11/hello-world/" class="next-prefix">» </a> 下一篇：    <a href="/blog/2021/08/11/hello-world/" title="发布于 2021-08-11 10:56">Hello World</a>
+            
         </div>
+    </div>
     
-        <div class="article">
-            <div class="article-title">
-                <a href="/blog/2021/06/08/Git%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Git 常用命令</a>
-                
-                    <span class="article-sticky">置顶</span>
-                
-            </div>
-            <div class="article-abstract">
-                
-                    摘要：Git 命令
-                    <a href="/blog/2021/06/08/Git%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">阅读全文</a>
-                
-            </div>
-            <div class="clear"></div>
-            <div class="article-info">
-                <span>
-                    <i class="iconfont icon-time"></i> 发表时间：2021-06-08
-                </span>
-                
-                    <span id="/2021/06/08/Git 常用命令/" class="leancloud_visitors" data-flag-title="Git 常用命令">
-                        <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
-                    </span>
-                
-                <span>
-                    <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/2021/06/08/Git 常用命令/"></span>
-                </span>
-            </div>
-            <div class="clear"></div>     
+    <div class="article-comments">
+        <div class="comments-title">
+            评论列表
         </div>
-    
-    
+        <div class="comments-content">
+        </div>
+    </div>
+
 </div>
 
     </div>

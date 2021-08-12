@@ -265,4 +265,17 @@
             });
         });
     });
+
+        // 按 esc键 ，取消搜索框
+$(document).keydown(function (event) {
+        if (event.keyCode == 27) {
+            setTimeout(function(){
+                // 删除蒙层
+                $('.search-cover').remove();
+                $('.search-window')[0].style.display= "none";
+                document.getElementsByTagName("body")[0].style.overflow = "auto";
+			},300)
+        }
+    });
+
 }

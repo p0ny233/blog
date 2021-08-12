@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+    <meta name="referrer" content="origin">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <title>Git配置同时存在Gitee、Github多个账户</title>
+
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/LongCang.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/Monda.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/NotoSansSC.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/Playball.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/PTMono.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/RobotoSlab.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/Rosario.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/UbuntuMono.css">
+
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/post.css">
+    
+        <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/normal.css">
+    
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/jquery-3.4.1.min.js"></script>
+
+</head>
+<body>
+    <a id="cover"></a>
+    <div id="header">
+    <div class="header">
+        <div class="vertical">
+            <div class="inner">
+                <h1 class="header-subtitle">Git配置同时存在Gitee、Github多个账户</h1>
+                <div class="header-subinfo">
+                    <p class="article-info-text">
+                        <span>
+                            <i class="iconfont icon-time"></i> 发表时间：2021-08-11
+                        </span>
+                        
+                            <span id="/2021/08/11/Git配置同时存在Gitee、Github多个账户/" class="leancloud_visitors" data-flag-title="Git配置同时存在Gitee、Github多个账户">
+                                <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
+                            </span>
+                        
+                        <span>
+                            <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/2021/08/11/Git配置同时存在Gitee、Github多个账户/"></span>
+                        </span>  
+                    </p>                 
+                </div>
+            </div>
+        </div>
+        <canvas id="articleHeaderCanvas"></canvas>
+    </div>
+</div>
+    <div id="container">
+    <div id="content">
+        <div id="article">
+    <div class="toc"></div>
+    <div class="article-body">
+        <h1 id="Git配置同时存在Gitee、Github多个账户"><a href="#Git配置同时存在Gitee、Github多个账户" class="headerlink" title="Git配置同时存在Gitee、Github多个账户"></a>Git配置同时存在Gitee、Github多个账户</h1><h3 id="一、清空-Git-的全局配置文件里面的内容"><a href="#一、清空-Git-的全局配置文件里面的内容" class="headerlink" title="一、清空 Git 的全局配置文件里面的内容"></a>一、清空 Git 的全局配置文件里面的内容</h3><blockquote>
+<ol>
+<li><p><strong>清空</strong> Git 的全局配置文件里面的内容</p>
+<p>全局配置文件的路径：<br><code>&quot;C:\Users\用户名\.gitconfig&quot;</code></p>
+<p>该文件下有类似如下内容，则<strong>清空</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[user]</span><br><span class="line">email = p0ny233@88.com</span><br><span class="line">name = p0ny233</span><br></pre></td></tr></table></figure>
+
+<p><strong>刚安装 <code>git</code> 的可以忽略这一步</strong></p>
+</li>
+</ol>
+</blockquote>
+<h3 id="二、生成新的-SSH-keys"><a href="#二、生成新的-SSH-keys" class="headerlink" title="二、生成新的 SSH keys"></a>二、生成新的 SSH keys</h3><blockquote>
+<ol start="0">
+<li><p>若在 <code>C:/Users/用户名/</code> 目录下没有 <code>.ssh</code> 文件夹，不允许创建以 <code>.</code> 开头的文件,那么就需要使用命令任意生成</p>
+<blockquote>
+<ol>
+<li><p>打开 <code>git</code> 终端</p>
+</li>
+<li><p><code>ssh-keygen -t rsa -C &quot;p0ny233@github.com&quot;</code></p>
+</li>
+<li><p>该命令执行后，会在<code>C:/Users/用户名/</code> 目录下生成 <code>.ssh</code> 文件夹</p>
+</li>
+<li><p>然后将 <code>C:/Users/用户名/.ssh/</code> 目录下的 <strong>所有文件清空</strong> ，继续下面的步骤即可</p>
+</li>
+</ol>
+</blockquote>
+</li>
+<li><p>生成 Github 的钥匙</p>
+<blockquote>
+<p> 命令格式：<code>ssh-keygen -t rsa -f C:/Users/用户名/.ssh/id_rsa.github -C &quot;p0ny233@github.com&quot;</code></p>
+</blockquote>
+</li>
+<li><p>生成 Gitlab 的钥匙</p>
+<blockquote>
+<p> 命令格式：<code>ssh-keygen -t rsa -f C:/Users/用户名/.ssh/id_rsa.gitlab -C &quot;fengyucong@gitlab.com&quot;</code></p>
+</blockquote>
+</li>
+<li><p>生成 Gitee 的钥匙</p>
+<blockquote>
+<p> 命令格式：<code>ssh-keygen -t rsa -f C:/Users/用户名/.ssh/id_rsa.gitee -C &quot;p0ny233@gitee.com&quot;</code></p>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+<h3 id="三、多账号必须配置-config-文件-重点"><a href="#三、多账号必须配置-config-文件-重点" class="headerlink" title="三、多账号必须配置 config 文件(重点)"></a>三、多账号必须配置 config 文件(重点)</h3><blockquote>
+<ol>
+<li>创建 <code>config</code> 文件<br>查看 <code>&quot;C:/Users/用户名/.ssh/</code>  目录下是否存在 <code>config</code> 文件，没有则创建 <img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-11/1628681315136-image.png"><blockquote>
+<p><code>config</code> 文件的内容</p>
+<p><strong>里面的内容不能含有中文【未自测】</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">#Default gitHub user Self</span><br><span class="line">Host github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    User git #默认就是git，可以不写</span><br><span class="line">    IdentityFile  C:/Users/admin/.ssh/id_rsa.github</span><br><span class="line"></span><br><span class="line">#Add gitLab user </span><br><span class="line">    Host 10.11.10.37</span><br><span class="line">    HostName gitlab.com</span><br><span class="line">    User git</span><br><span class="line">    IdentityFile  C:/Users/admin/.ssh/id_rsa.gitlab</span><br><span class="line"></span><br><span class="line"># gitee</span><br><span class="line">Host gitee.com</span><br><span class="line">    Port 22</span><br><span class="line">    HostName gitee.com</span><br><span class="line">    User git</span><br><span class="line">    IdentityFile  C:/Users/admin/.ssh/id_rsa.gitee</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>对 <code>config</code> 文件内容的字段说明：</p>
+<ul>
+<li><p>Host</p>
+<p>涵盖了下面一个段的配置，我们可以通过他来替代将要连接的服务器地址。<br>这里可以使用任意字段或通配符。<br>当ssh的时候如果服务器地址能匹配上这里Host指定的值，则Host下面指定的HostName将被作为最终的服务器地址使用</p>
+</li>
+<li><p>Port </p>
+<p>自定义的端口。默认为22，可不配置</p>
+</li>
+<li><p>User </p>
+<p>自定义的用户名，默认为git，可不配置</p>
+</li>
+<li><p>HostName </p>
+<p>真正连接的服务器地址</p>
+</li>
+<li><p>PreferredAuthentications </p>
+<p>指定优先使用哪种方式验证，支持密码和秘钥验证方式</p>
+</li>
+<li><p>IdentityFile </p>
+<p>指定本次连接使用的密钥文件</p>
+</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+<h3 id="四、在-github-、-gitlab-和-gitee-网站添加-ssh"><a href="#四、在-github-、-gitlab-和-gitee-网站添加-ssh" class="headerlink" title="四、在 github 、 gitlab 和 gitee 网站添加 ssh"></a>四、在 github 、 gitlab 和 gitee 网站添加 ssh</h3><blockquote>
+<ol>
+<li>github直达地址：<code>https://github.com/settings/keys</code><img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-11/1628682745107-image.png" alt="github直达添加key地址"></li>
+</ol>
+<ol start="2">
+<li><p>将 <code>C:\Users\admin\.ssh\id_rsa.github.pub</code> 文件的所有内容复制粘贴到 文本框中</p>
+<p><img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-11/1628683524975-image.png" alt="打开文件"></p>
+<p><img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-11/1628683643213-image.png" alt="点击添加"></p>
+</li>
+</ol>
+</blockquote>
+<h3 id="五、在-git-终端测试是否连接成功"><a href="#五、在-git-终端测试是否连接成功" class="headerlink" title="五、在 git 终端测试是否连接成功"></a>五、在 git 终端测试是否连接成功</h3><blockquote>
+<ol>
+<li><p>由于每个托管商的<strong>仓库</strong>都有唯一的后缀，比如 Github 的是 <a href="mailto:&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#46;&#99;&#x6f;&#x6d;">&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#46;&#99;&#x6f;&#x6d;</a>:*。<br>所以可以这样测试：<br><code>ssh -T git@github.com</code></p>
+<p><img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-11/1628683925777-image.png"></p>
+</li>
+</ol>
+<ol start="2">
+<li><p>然后遇到问题【如果没遇到问题则跳过】：<code>git@github.com: Permission denied (publickey).</code></p>
+<p><img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-11/1628684125655-image.png"></p>
+<p> 解决方式：</p>
+<blockquote>
+<ol>
+<li>使用命令 <code>ssh-agent bash</code>  </li>
+<li>命令格式 <code>ssh-add C:/Users/用户名/.ssh/id_rsa.平台名称</code> 【<strong>注意路径的斜杠</strong>】<br>我这里的命令是 <code>ssh-add C:/Users/admin/.ssh/id_rsa.github</code><br><img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-11/1628685369174-image.png"></li>
+</ol>
+</blockquote>
+</li>
+</ol>
+<ol start="3">
+<li>继续测试<br><img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-11/1628685567778-image.png"><br>提示 <code>Hi 用户名! You&#39;ve successfully authenticated, but GitHub does not provide shell access. </code> 说明连接成功</li>
+</ol>
+</blockquote>
+<h3 id="六、测试内网-gitlab-连接"><a href="#六、测试内网-gitlab-连接" class="headerlink" title="六、测试内网 gitlab 连接"></a>六、测试内网 gitlab 连接</h3><blockquote>
+<ol>
+<li>无法使用命令 <code>ssh -T 10.11.10.37</code> 进行测试，会遭到<strong>权限的拒绝</strong></li>
+<li>而且 <code>config</code> 配置文件中的 Host 字段需要指定成 <strong>IP地址</strong> ，否则也会遭到<strong>权限的拒绝</strong></li>
+<li>只能添加 仓库的地址去 <code>pull</code> 下来，才知道是否成功   </li>
+<li>1 复制仓库地址<br>  <img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-11/1628689656125-image.png"></li>
+<li>2 新建一个空文件夹 ，然后打开 git终端使用初始化命令<br>  <code>git init</code>   </li>
+<li>3 使用命令添加刚复制的远程仓库<br><code>git remote add apk git@gitlab.testplus.cn:chenyang6/apk_checker.git</code>  </li>
+<li>4 下载仓库中的代码<br><code>git pull apk master</code> </li>
+</ol>
+</blockquote>
+<p><img src="https://gitee.com/coder_p0ny/md-nice-markdown_pic/raw/master/2021-8-11/1628689249564-image.png"></p>
+
+        <p class="suffix-end">__END__</p>
+        <div class="suffix-box">
+            <div class="suffix-box-left">
+                <img src="https://s3.ax1x.com/2021/02/15/y60dRU.jpg" alt="p0ny">
+            </div>
+            <div class="suffix-box-right">
+                <span class="suffix-box-title">文章作者</span>：p0ny
+                <br>
+                <span class="suffix-box-title">文章出处</span>：<a href="/blog/2021/08/11/Git%E9%85%8D%E7%BD%AE%E5%90%8C%E6%97%B6%E5%AD%98%E5%9C%A8Gitee%E3%80%81Github%E5%A4%9A%E4%B8%AA%E8%B4%A6%E6%88%B7/" target="_blank">原创</a>
+                <br>
+                <span class="suffix-box-title">作者签名</span>：一穷二白
+                <br>
+                <span class="suffix-box-title">关于主题</span>：<a href="https://github.com/first19326/Hexo-LiveForCode" target="_blank">p0ny</a>
+                <br>
+                <span class="suffix-box-title">版权声明</span>：文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" title="BY-NC-SA" target="_blank">BY-NC-SA</a> 许可协议，转载请注明出处
+                <br>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <div class="article-footer">
+        
+            <div class="category">
+                分类：
+                
+                    <a href="/blog/categories/Git/">Git</a>
+                
+            </div>
+        
+        
+            <div class="tag">
+                标签：
+                
+                    <a href="/blog/tags/Git/">Git</a>
+                
+            </div>
+        
+        <div class="article-prev-next">
+            
+                <a href="/blog/2021/08/11/hello-world/" class="prev-prefix">« </a> 上一篇：    <a href="/blog/2021/08/11/hello-world/" title="发布于 2021-08-11 10:56">Hello World</a>
+                <br>
+            
+            
+                <a href="/blog/2021/08/02/Java%E9%AB%98%E7%BA%A7%E5%BC%80%E5%8F%91%E4%B9%8BJNI/" class="next-prefix">» </a> 下一篇：    <a href="/blog/2021/08/02/Java%E9%AB%98%E7%BA%A7%E5%BC%80%E5%8F%91%E4%B9%8BJNI/" title="发布于 2021-08-02 05:38">Java高级开发之JNI</a>
+            
+        </div>
+    </div>
+    
+    <div class="article-comments">
+        <div class="comments-title">
+            评论列表
+        </div>
+        <div class="comments-content">
+        </div>
+    </div>
+
+</div>
+
+    </div>
+</div>
+    <div id="footer"></div>
+    <div id="sidebar">
+    <div class="menu-wrap" style="display:none;">
+        <nav class="menu">
+            <div class="menu-introduce"> 
+                <div class="introduce-avatar"></div> 
+                <div class="introduce-info"> 
+                    <div class="introduce-user"><span></span></div>        
+                </div> 
+            </div> 
+            <div class="menu-list">
+                <ul></ul> 
+            </div> 
+            <div class="menu-link"></div> 
+        </nav>
+        <button class="menu-button-close"></button>
+        <div class="morph-shape" id="morph-shape" data-morph-open="M-7.312,0H15c0,0,66,113.339,66,399.5C81,664.006,15,800,15,800H-7.312V0z;M-7.312,0H100c0,0,0,113.839,0,400c0,264.506,0,400,0,400H-7.312V0z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
+                <path d="M-7.312,0H0c0,0,0,113.839,0,400c0,264.506,0,400,0,400h-7.312V0z"/>
+            </svg>
+        </div>
+    </div>
+    <button class="menu-button-open">MENU</button>
+    <div class="menu-cover"></div>
+</div>
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/search.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/iscroll.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/instantsearch.min.js"></script>
+<div class="search-window">
+    <div class="search-content">
+        <div class="search-content-icon">
+            <i class="iconfont icon-search"></i>
+        </div>
+        <div id="search-input" class="search-input"></div>
+    </div>
+
+    <div class="search-scroll">
+        <div class="search-result">
+            <div id="search-stats" class="search-stats"></div>
+            <div id="search-hits"></div>
+            <div id="search-pagination" class="search-pagination"></div>
+        </div>
+    </div>
+
+    <span class="search-close-icon">
+        <i class="iconfont icon-close"></i>
+    </span>
+</div>
+    <div id="tools">
+    <div class="progressbar-top"></div>
+
+    
+        <div class="aplayer"></div>
+        <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/APlayer.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/APlayer.min.js"></script>
+        <script type="text/javascript">
+            const aplayer = new APlayer({
+                container: document.querySelector(".aplayer"),
+                fixed: true,
+                autoplay: false,
+                loop: "all",
+                order: "random",
+                preload: "auto",
+                volume: 0.67,
+                mutex: true,
+                lrcType: 3,
+                audio: [
+                    
+                        {
+                            name: "See You Again",
+                            artist: "Charlie Puth, Wiz Khalifa",
+                            cover: "/blog/music/cover/See You Again.jpg",
+                            url: "/blog/music/song/See You Again.mp3",
+                            lrc: "/blog/music/lrc/See You Again.lrc"
+                        },
+                    
+                        {
+                            name: "痴心绝对",
+                            artist: "李圣杰",
+                            cover: "/blog/music/cover/痴心绝对.jpg",
+                            url: "/blog/music/song/痴心绝对.mp3",
+                            lrc: "/blog/music/lrc/痴心绝对.lrc"
+                        },
+                    
+                        {
+                            name: "好想大声说爱你",
+                            artist: "大黒摩季",
+                            cover: "/blog/music/cover/好想大声说爱你.jpg",
+                            url: "/blog/music/song/好想大声说爱你.mp3",
+                            lrc: "/blog/music/lrc/好想大声说爱你.lrc"
+                        },
+                    
+                        {
+                            name: "Baby",
+                            artist: "Justin Bieber、Ludacris",
+                            cover: "/blog/music/cover/Baby.jpg",
+                            url: "/blog/music/song/Baby.mp3",
+                            lrc: "/blog/music/lrc/Baby.lrc"
+                        },
+                    
+                        {
+                            name: "大风吹",
+                            artist: "王赫野",
+                            cover: "/blog/music/cover/大风吹.jpg",
+                            url: "/blog/music/song/大风吹.mp3",
+                            lrc: "/blog/music/lrc/大风吹.lrc"
+                        },
+                    
+                        {
+                            name: "热爱105°C的你",
+                            artist: "阿肆",
+                            cover: "/blog/music/cover/热爱105°C的你.jpg",
+                            url: "/blog/music/song/热爱105°C的你.mp3",
+                            lrc: "/blog/music/lrc/热爱105°C的你.lrc"
+                        },
+                    
+                        {
+                            name: "生命树",
+                            artist: "吴雨霏",
+                            cover: "/blog/music/cover/生命树.jpg",
+                            url: "/blog/music/song/生命树.mp3",
+                            lrc: "/blog/music/lrc/生命树.lrc"
+                        },
+                    
+                ]
+            });
+        </script>
+    
+    
+    <div class="wrap-right"></div>
+    <div class="loading"></div>
+</div>
+    <script>
+    window.config = {
+        GitHubUserName     : 'first19326',
+        GitHubRepositories : 'Hexo-LiveForCode',
+
+        BlogUser      : 'p0ny',
+        BlogAvatar    : 'https://s3.ax1x.com/2021/02/15/y60dRU.jpg',
+        BlogStartDate : '2020-02-15',
+
+        WebsiteTitleBlur         : '(◍´꒳`◍) Hi, p0ny',
+        WebsiteTitleBlurTimeOut  : 500,
+        WebsiteTitleFocus        : '(*´∇｀*) 欢迎回来!',
+        WebsiteTitleFocusTimeOut : 1000,
+        WebsiteFavicon           : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/image/website/logo.png',
+
+        ProgressBar: {
+            id       : 'topProgressBar',
+            color    : '#77B6FF',
+            height   : '2px',
+            duration : 0.2
+        },
+
+        Loading: {
+            rebound: {
+                tension  : 16,
+                friction : 5
+            },
+            spinner: {
+                id     : 'spinner',
+                radius : 90,
+                sides  : 3,
+                depth  : 4,
+                colors : {
+                    background : '#F0F0F0',
+                    stroke     : '#272633',
+                    base       : '',
+                    child      : '#272633'
+                },
+                alwaysForward : true,
+                restAt        : 0.5,
+                renderBase    : false
+            }
+        },
+
+        HomeHeaderAnimationRendered : true,
+        HomeHeaderAnimation         : {
+            radius      : 15,
+            density     : 0.2,
+            color       : 'rgba(255, 255, 255, .2)',
+            clearOffset : 0.3
+        },
+
+        ArticleHeaderAnimationRendered : false,
+        ArticleHeaderAnimation         : {
+            triW                  : 14,
+            triH                  : 20,
+            neighbours            : [
+                
+                    'side',
+                
+                    'top',
+                
+                    'bottom',
+                
+            ],
+            speedTrailAppear      : 0.1,
+            speedTrailDisappear   : 0.1,
+            speedTriOpen          : 1,
+            trailMaxLength        : 30,
+            trailIntervalCreation : 100,
+            delayBeforeDisappear  : 2,
+            colors                : [
+                
+                    '#96EDA6',
+                
+                    '#5BC6A9',
+                
+                    '#38668C',
+                
+                    '#374D84',
+                
+                    '#BED5CB',
+                
+                    '#62ADC6',
+                
+                    '#8EE5DE',
+                
+                    '#304E7B',
+                
+            ]
+        },
+
+        BackAnimationRendered          : true,
+        IEBrowserBackAnimationRendered : false,
+        BackAnimation                  : {
+            colorSaturation  : '60%',
+            colorBrightness  : '50%',
+            colorAlpha       : 0.5,
+            colorCycleSpeed  : 5,
+            verticalPosition : 'random',
+            horizontalSpeed  : 200,
+            ribbonCount      : 3,
+            strokeSize       : 0,
+            parallaxAmount   : -0.2,
+            animateSections  : true
+        },
+
+        HomeHeaderImage : [
+            
+                'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/image/header/home.jpg',
+            
+                'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/image/header/home.jpeg',
+            
+        ],
+        HomeBannerText  : '',
+
+        ArticleHeaderImage : [
+            
+                'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/image/header/article.jpg',
+            
+        ],
+
+        OtherBannerText : '',
+
+        MenuList : [
+            
+                {
+                    name   : '首页',
+                    href   : '/blog',    
+                    target : '',
+                    class  : ''
+                },
+            
+                {
+                    name   : '标签',
+                    href   : '/blog/tag',    
+                    target : '',
+                    class  : ''
+                },
+            
+                {
+                    name   : '分类',
+                    href   : '/blog/category',    
+                    target : '',
+                    class  : ''
+                },
+            
+                {
+                    name   : '赞赏',
+                    href   : '/blog/donate',    
+                    target : '',
+                    class  : ''
+                },
+            
+                {
+                    name   : '关于',
+                    href   : '/blog/about',    
+                    target : '',
+                    class  : ''
+                },
+            
+                {
+                    name   : '订阅',
+                    href   : '/blog/subscribe',    
+                    target : '_blank',
+                    class  : ''
+                },
+            
+                {
+                    name   : '搜索',
+                    href   : '',    
+                    target : '',
+                    class  : 'search'
+                },
+            
+                {
+                    name   : '留言板',
+                    href   : '/blog/comment',    
+                    target : '',
+                    class  : ''
+                },
+            
+                {
+                    name   : '友情链接',
+                    href   : '/blog/friend',    
+                    target : '',
+                    class  : ''
+                },
+            
+        ],
+        MenuLink : [
+            
+                
+                    {
+                        icon : 'icon-weibo', 
+                        url  : ''
+                    },
+                
+                    {
+                        icon : 'icon-wechat', 
+                        url  : ''
+                    },
+                
+                    {
+                        icon : 'icon-qq', 
+                        url  : ''
+                    },
+                
+                    {
+                        icon : 'icon-github', 
+                        url  : 'https://github.com/p0ny233'
+                    },
+                
+            
+        ],
+
+        FooterStyle : 2,
+        BottomText  : {
+            icon    : 'like-fill',
+            left    : '人生若只如初见',
+            right   : '何事秋风悲画扇'
+        },
+        ThemeInfo   : true,
+
+        ConsoleList : [
+            
+                
+                    [
+                        
+                            
+                                'Based on cnblogs theme SimpleMemory.',
+                            
+                                '',
+                            
+                        
+                    ],
+                
+                    [
+                        
+                            
+                                'SimpleMemory Author:',
+                            
+                                'BNDong',
+                            
+                        
+                    ],
+                
+                    [
+                        
+                            
+                                'Theme:',
+                            
+                                'LiveForCode',
+                            
+                        
+                    ],
+                
+            
+        ],
+
+        FontIconExtend : '',
+
+        Donate : {
+            paypal  : '',
+            bitcoin : '',
+            alipay  : 'https://s3.ax1x.com/2021/02/15/y601MQ.jpg',
+            wechat  : 'https://s3.ax1x.com/2021/02/15/y60aGT.jpg'
+        },
+
+        Code : {
+            style : 'normal'
+        },  
+
+        Search : {
+            applicationID : '65DY1OA18G',
+            apiKey        : 'b90b306f3270dc249b8052da157208ea',
+            indexName     : 'hexoBlog',
+            hits          : {
+                page : 10
+            },
+            labels        : {
+                placeholder : '搜索',
+                empty       : '未发现与 「${query}」 相关的内容',
+                stats       : '${hits} 条相关条目，使用了 ${time} 毫秒',
+            }
+        }, 
+
+        Valine : {
+            switch         : true,
+            el             : '.comments-content',
+            appId          : 'srhKtvWPQTWYKh3qX8G8M7v0-gzGzoHsz',
+            appKey         : '8uVSP1q6UlALVC5igYfIfv2h',
+            placeholder    : '你是我一生只会遇见一次的惊喜...',
+            avatar         : 'mm',
+            meta           : 'nick,mail,link',
+            requiredFields : 'nick,mail',
+            pageSize       : 5,
+            lang           : 'zh-cn',
+            visitor        : true,
+            enableQQ       : true
+        },
+
+        Tocbot : {
+            switch                : true,
+            tocSelector           : '.toc',
+            contentSelector       : '.article-body',
+            headingSelector       : 'h1, h2, h3, h4, h5',
+            headingsOffset        : 0,
+            scrollSmooth          : true,
+            scrollSmoothOffset    : -5,
+            positionFixedSelector : '.toc',
+            positionFixedClass    : 'toc-fixed',
+            fixedSidebarOffset    : '',
+        },
+
+        Require : {
+            baseUrl     : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/',
+            waitSeconds : 100
+        },
+
+        Music : {
+            type : 'APlayer'
+        },
+        APlayer : {
+            container : '.aplayer',
+            fixed     : true,
+            autoplay  : false,
+            loop      : 'all',
+            order     : 'random',
+            preload   : 'auto',
+            volume    : 0.67,
+            mutex     : true,
+            lrcType   : 3,
+            audio     : [
+                
+                    {
+                        name   : 'See You Again',
+                        artist : 'Charlie Puth, Wiz Khalifa',
+                        cover  : '/blog/music/cover/See You Again.jpg',
+                        url    : '/blog/music/song/See You Again.mp3',
+                        lrc    : '/blog/music/lrc/See You Again.lrc'
+                    },
+                
+                    {
+                        name   : '痴心绝对',
+                        artist : '李圣杰',
+                        cover  : '/blog/music/cover/痴心绝对.jpg',
+                        url    : '/blog/music/song/痴心绝对.mp3',
+                        lrc    : '/blog/music/lrc/痴心绝对.lrc'
+                    },
+                
+                    {
+                        name   : '好想大声说爱你',
+                        artist : '大黒摩季',
+                        cover  : '/blog/music/cover/好想大声说爱你.jpg',
+                        url    : '/blog/music/song/好想大声说爱你.mp3',
+                        lrc    : '/blog/music/lrc/好想大声说爱你.lrc'
+                    },
+                
+                    {
+                        name   : 'Baby',
+                        artist : 'Justin Bieber、Ludacris',
+                        cover  : '/blog/music/cover/Baby.jpg',
+                        url    : '/blog/music/song/Baby.mp3',
+                        lrc    : '/blog/music/lrc/Baby.lrc'
+                    },
+                
+                    {
+                        name   : '大风吹',
+                        artist : '王赫野',
+                        cover  : '/blog/music/cover/大风吹.jpg',
+                        url    : '/blog/music/song/大风吹.mp3',
+                        lrc    : '/blog/music/lrc/大风吹.lrc'
+                    },
+                
+                    {
+                        name   : '热爱105°C的你',
+                        artist : '阿肆',
+                        cover  : '/blog/music/cover/热爱105°C的你.jpg',
+                        url    : '/blog/music/song/热爱105°C的你.mp3',
+                        lrc    : '/blog/music/lrc/热爱105°C的你.lrc'
+                    },
+                
+                    {
+                        name   : '生命树',
+                        artist : '吴雨霏',
+                        cover  : '/blog/music/cover/生命树.jpg',
+                        url    : '/blog/music/song/生命树.mp3',
+                        lrc    : '/blog/music/lrc/生命树.lrc'
+                    },
+                
+            ]
+        },
+        Meting : {
+            id       : '3778678', 
+            lrcshow  : false, 
+            server   : 'netease', 
+            type     : 'playlist', 
+            fixed    : true, 
+            autoplay : false, 
+            loop     : 'all', 
+            order    : 'random', 
+            preload  : 'auto', 
+            volume   : 0.67, 
+            mutex    : true
+        },
+
+        LazyLoad : {
+            default : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/image/website/lazyload.svg'
+        },
+  
+        Style : {
+            aplayer          : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/APlayer.css',
+            archive          : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/archive.css',
+            donate           : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/donate.css',
+            fancybox         : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/jquery.fancybox.css',
+            footer           : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/footer.css',
+            iconfont         : 'https://at.alicdn.com/t/font_1546312_l3yohatebw.css',
+            index            : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/index.css',
+            menuBubble       : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/menu-bubble.css',
+            page             : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/page.css',
+            post             : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/post.css',
+            search           : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/search.css',
+            tocbot           : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/tocbot.css',
+            normal           : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/normal.css',
+            night            : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/night.css',
+            clipboard        : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/clipboard.css'
+        },
+
+        Script: {
+            aplayer          : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/APlayer.min.js',
+            config           : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/require.config.js',
+            index            : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config@1.0/hexo-liveforcode/static/js/index.js',
+            instantSearch    : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/instantsearch.min.js',
+            jQuery           : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/jquery-3.4.1.min.js',
+            loading          : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/loading.js',
+            meting           : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/Meting.min.js',
+            iscroll          : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/iscroll.js',
+            require          : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/require.min.js'
+        },
+
+        Font: {
+            LongCang   : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/LongCang.css',
+            Monda      : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/Monda.css',
+            NotoSansSC : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/NotoSansSC.css',
+            Playball   : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/Playball.css',
+            PTMono     : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/PTMono.css',
+            RobotoSlab : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/RobotoSlab.css',
+            Rosario    : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/Rosario.css',
+            UbuntuMono : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/UbuntuMono.css'
+        },
+
+        Suffix : {
+            about : '简单地活着, 肆意又精彩.'
+        },
+            
+        Theme : {
+            url  : 'https://github.com/first19326/Hexo-LiveForCode',
+            name : 'p0ny'
+        }  
+    };
+</script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config@1.0/hexo-liveforcode/static/js/index.js"></script>
+</body>
+</html>

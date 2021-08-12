@@ -381,7 +381,7 @@ Style:
 Script:
   aplayer: https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/APlayer.min.js
   config: https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/require.config.js
-  index: https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/index.js
+  index: https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config@1.0/hexo-liveforcode/static/js/index.js
   instantSearch: https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/instantsearch.min.js
   jQuery: https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/jquery-3.4.1.min.js
   loading: https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/loading.js

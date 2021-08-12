@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+    <meta name="referrer" content="origin">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <title>CMD 常用命令</title>
+
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/LongCang.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/Monda.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/NotoSansSC.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/Playball.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/PTMono.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/RobotoSlab.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/Rosario.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/UbuntuMono.css">
+
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/post.css">
+    
+        <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/normal.css">
+    
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/jquery-3.4.1.min.js"></script>
+
+</head>
+<body>
+    <a id="cover"></a>
+    <div id="header">
+    <div class="header">
+        <div class="vertical">
+            <div class="inner">
+                <h1 class="header-subtitle">CMD 常用命令</h1>
+                <div class="header-subinfo">
+                    <p class="article-info-text">
+                        <span>
+                            <i class="iconfont icon-time"></i> 发表时间：2021-05-29
+                        </span>
+                        
+                            <span id="/2021/05/29/CMD 常用命令/" class="leancloud_visitors" data-flag-title="CMD 常用命令">
+                                <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
+                            </span>
+                        
+                        <span>
+                            <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/2021/05/29/CMD 常用命令/"></span>
+                        </span>  
+                    </p>                 
+                </div>
+            </div>
+        </div>
+        <canvas id="articleHeaderCanvas"></canvas>
+    </div>
+</div>
+    <div id="container">
+    <div id="content">
+        <div id="article">
+    <div class="toc"></div>
+    <div class="article-body">
+        <h2 id="CMD-命令"><a href="#CMD-命令" class="headerlink" title="CMD 命令"></a>CMD 命令</h2><ul>
+<li><p>打开控制面板</p>
+<p> <code>control</code></p>
+</li>
+<li><p>打开 注册表编辑器</p>
+<p><code>regedit</code></p>
+</li>
+<li><p>打开 远程桌面连接</p>
+<p><code>mstsc</code></p>
+</li>
+<li><p>打开网络连接</p>
+<p> <code>ncpa.cpl</code></p>
+</li>
+<li><p>打开 Internet属性</p>
+<p><code>inetcpl.cpl</code></p>
+</li>
+<li><p>打开 添加删除程序</p>
+<p><code>appwiz.cpl</code></p>
+</li>
+<li><p>打开 系统属性</p>
+<p><code>sysdm.cpl</code></p>
+</li>
+<li><p>打开 防火墙</p>
+<p><code>firewall.cpl</code></p>
+</li>
+<li><p>打开 鼠标属性</p>
+<p><code>main.cpl</code></p>
+</li>
+<li><p>打开 计算机管理</p>
+<p><code>compmgmt.msc</code></p>
+</li>
+<li><p>打开 设备管理器 对话框</p>
+<p><code>devmgmt.msc</code> 或者 <code>hdwwiz.cpl</code></p>
+</li>
+<li><p>打开证书管理器</p>
+<p><code>certmgr.msc</code></p>
+</li>
+<li><p>打开 windows服务</p>
+<p><code>services.msc</code></p>
+</li>
+<li><p>打开本地安全策略</p>
+<p><code>secpol.msc</code></p>
+</li>
+<li><p>打开 本地用户和组 对话框</p>
+<p><code>lusrmgr.msc</code></p>
+</li>
+<li><p>打开 本地组策略编辑器</p>
+<p><code>gpedit.msc</code></p>
+</li>
+<li><p>打开 高级安全 Windows Defender 防火墙【出站入站规则】</p>
+<p><code>wf.msc</code></p>
+</li>
+<li><p>打开 磁盘管理【分盘工具】</p>
+<p><code>diskmgmt.msc</code></p>
+</li>
+</ul>
+
+        <p class="suffix-end">__END__</p>
+        <div class="suffix-box">
+            <div class="suffix-box-left">
+                <img src="https://s3.ax1x.com/2021/02/15/y60dRU.jpg" alt="p0ny">
+            </div>
+            <div class="suffix-box-right">
+                <span class="suffix-box-title">文章作者</span>：p0ny
+                <br>
+                <span class="suffix-box-title">文章出处</span>：<a href="/blog/2021/05/29/CMD%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" target="_blank">原创</a>
+                <br>
+                <span class="suffix-box-title">作者签名</span>：一穷二白
+                <br>
+                <span class="suffix-box-title">关于主题</span>：<a href="https://github.com/first19326/Hexo-LiveForCode" target="_blank">p0ny</a>
+                <br>
+                <span class="suffix-box-title">版权声明</span>：文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" title="BY-NC-SA" target="_blank">BY-NC-SA</a> 许可协议，转载请注明出处
+                <br>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <div class="article-footer">
+        
+            <div class="category">
+                分类：
+                
+                    <a href="/blog/categories/CMD-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">CMD 常用命令</a>
+                
+            </div>
+        
+        
+            <div class="tag">
+                标签：
+                
+                    <a href="/blog/tags/CMD/">CMD</a>
+                
+            </div>
+        
+        <div class="article-prev-next">
+            
+                <a href="/blog/2021/05/29/Windows%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/" class="prev-prefix">« </a> 上一篇：    <a href="/blog/2021/05/29/Windows%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/" title="发布于 2021-05-29 07:14">Windows常用技巧</a>
+                <br>
+            
+            
+                <a href="/blog/2021/05/29/Python%20%E8%A7%A3%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6%E3%80%90%E5%8F%AA%E8%83%BD%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6%E5%A4%B9%E3%80%91/" class="next-prefix">» </a> 下一篇：    <a href="/blog/2021/05/29/Python%20%E8%A7%A3%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6%E3%80%90%E5%8F%AA%E8%83%BD%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6%E5%A4%B9%E3%80%91/" title="发布于 2021-05-29 05:28">Python 解压缩文件【只能压缩文件夹】</a>
+            
+        </div>
+    </div>
+    
+    <div class="article-comments">
+        <div class="comments-title">
+            评论列表
+        </div>
+        <div class="comments-content">
+        </div>
+    </div>
+
+</div>
+
+    </div>
+</div>
+    <div id="footer"></div>
+    <div id="sidebar">
+    <div class="menu-wrap" style="display:none;">
+        <nav class="menu">
+            <div class="menu-introduce"> 
+                <div class="introduce-avatar"></div> 
+                <div class="introduce-info"> 
+                    <div class="introduce-user"><span></span></div>        
+                </div> 
+            </div> 
+            <div class="menu-list">
+                <ul></ul> 
+            </div> 
+            <div class="menu-link"></div> 
+        </nav>
+        <button class="menu-button-close"></button>
+        <div class="morph-shape" id="morph-shape" data-morph-open="M-7.312,0H15c0,0,66,113.339,66,399.5C81,664.006,15,800,15,800H-7.312V0z;M-7.312,0H100c0,0,0,113.839,0,400c0,264.506,0,400,0,400H-7.312V0z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
+                <path d="M-7.312,0H0c0,0,0,113.839,0,400c0,264.506,0,400,0,400h-7.312V0z"/>
+            </svg>
+        </div>
+    </div>
+    <button class="menu-button-open">MENU</button>
+    <div class="menu-cover"></div>
+</div>
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/search.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/iscroll.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/instantsearch.min.js"></script>
+<div class="search-window">
+    <div class="search-content">
+        <div class="search-content-icon">
+            <i class="iconfont icon-search"></i>
+        </div>
+        <div id="search-input" class="search-input"></div>
+    </div>
+
+    <div class="search-scroll">
+        <div class="search-result">
+            <div id="search-stats" class="search-stats"></div>
+            <div id="search-hits"></div>
+            <div id="search-pagination" class="search-pagination"></div>
+        </div>
+    </div>
+
+    <span class="search-close-icon">
+        <i class="iconfont icon-close"></i>
+    </span>
+</div>
+    <div id="tools">
+    <div class="progressbar-top"></div>
+
+    
+        <div class="aplayer"></div>
+        <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/APlayer.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/APlayer.min.js"></script>
+        <script type="text/javascript">
+            const aplayer = new APlayer({
+                container: document.querySelector(".aplayer"),
+                fixed: true,
+                autoplay: false,
+                loop: "all",
+                order: "random",
+                preload: "auto",
+                volume: 0.67,
+                mutex: true,
+                lrcType: 3,
+                audio: [
+                    
+                        {
+                            name: "See You Again",
+                            artist: "Charlie Puth, Wiz Khalifa",
+                            cover: "/blog/music/cover/See You Again.jpg",
+                            url: "/blog/music/song/See You Again.mp3",
+                            lrc: "/blog/music/lrc/See You Again.lrc"
+                        },
+                    
+                        {
+                            name: "痴心绝对",
+                            artist: "李圣杰",
+                            cover: "/blog/music/cover/痴心绝对.jpg",
+                            url: "/blog/music/song/痴心绝对.mp3",
+                            lrc: "/blog/music/lrc/痴心绝对.lrc"
+                        },
+                    
+                        {
+                            name: "好想大声说爱你",
+                            artist: "大黒摩季",
+                            cover: "/blog/music/cover/好想大声说爱你.jpg",
+                            url: "/blog/music/song/好想大声说爱你.mp3",
+                            lrc: "/blog/music/lrc/好想大声说爱你.lrc"
+                        },
+                    
+                        {
+                            name: "Baby",
+                            artist: "Justin Bieber、Ludacris",
+                            cover: "/blog/music/cover/Baby.jpg",
+                            url: "/blog/music/song/Baby.mp3",
+                            lrc: "/blog/music/lrc/Baby.lrc"
+                        },
+                    
+                        {
+                            name: "大风吹",
+                            artist: "王赫野",
+                            cover: "/blog/music/cover/大风吹.jpg",
+                            url: "/blog/music/song/大风吹.mp3",
+                            lrc: "/blog/music/lrc/大风吹.lrc"
+                        },
+                    
+                        {
+                            name: "热爱105°C的你",
+                            artist: "阿肆",
+                            cover: "/blog/music/cover/热爱105°C的你.jpg",
+                            url: "/blog/music/song/热爱105°C的你.mp3",
+                            lrc: "/blog/music/lrc/热爱105°C的你.lrc"
+                        },
+                    
+                        {
+                            name: "生命树",
+                            artist: "吴雨霏",
+                            cover: "/blog/music/cover/生命树.jpg",
+                            url: "/blog/music/song/生命树.mp3",
+                            lrc: "/blog/music/lrc/生命树.lrc"
+                        },
+                    
+                ]
+            });
+        </script>
+    
+    
+    <div class="wrap-right"></div>
+    <div class="loading"></div>
+</div>
+    <script>
+    window.config = {
+        GitHubUserName     : 'first19326',
+        GitHubRepositories : 'Hexo-LiveForCode',
+
+        BlogUser      : 'p0ny',
+        BlogAvatar    : 'https://s3.ax1x.com/2021/02/15/y60dRU.jpg',
+        BlogStartDate : '2020-02-15',
+
+        WebsiteTitleBlur         : '(◍´꒳`◍) Hi, p0ny',
+        WebsiteTitleBlurTimeOut  : 500,
+        WebsiteTitleFocus        : '(*´∇｀*) 欢迎回来!',
+        WebsiteTitleFocusTimeOut : 1000,
+        WebsiteFavicon           : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/image/website/logo.png',
+
+        ProgressBar: {
+            id       : 'topProgressBar',
+            color    : '#77B6FF',
+            height   : '2px',
+            duration : 0.2
+        },
+
+        Loading: {
+            rebound: {
+                tension  : 16,
+                friction : 5
+            },
+            spinner: {
+                id     : 'spinner',
+                radius : 90,
+                sides  : 3,
+                depth  : 4,
+                colors : {
+                    background : '#F0F0F0',
+                    stroke     : '#272633',
+                    base       : '',
+                    child      : '#272633'
+                },
+                alwaysForward : true,
+                restAt        : 0.5,
+                renderBase    : false
+            }
+        },
+
+        HomeHeaderAnimationRendered : true,
+        HomeHeaderAnimation         : {
+            radius      : 15,
+            density     : 0.2,
+            color       : 'rgba(255, 255, 255, .2)',
+            clearOffset : 0.3
+        },
+
+        ArticleHeaderAnimationRendered : false,
+        ArticleHeaderAnimation         : {
+            triW                  : 14,
+            triH                  : 20,
+            neighbours            : [
+                
+                    'side',
+                
+                    'top',
+                
+                    'bottom',
+                
+            ],
+            speedTrailAppear      : 0.1,
+            speedTrailDisappear   : 0.1,
+            speedTriOpen          : 1,
+            trailMaxLength        : 30,
+            trailIntervalCreation : 100,
+            delayBeforeDisappear  : 2,
+            colors                : [
+                
+                    '#96EDA6',
+                
+                    '#5BC6A9',
+                
+                    '#38668C',
+                
+                    '#374D84',
+                
+                    '#BED5CB',
+                
+                    '#62ADC6',
+                
+                    '#8EE5DE',
+                
+                    '#304E7B',
+                
+            ]
+        },
+
+        BackAnimationRendered          : true,
+        IEBrowserBackAnimationRendered : false,
+        BackAnimation                  : {
+            colorSaturation  : '60%',
+            colorBrightness  : '50%',
+            colorAlpha       : 0.5,
+            colorCycleSpeed  : 5,
+            verticalPosition : 'random',
+            horizontalSpeed  : 200,
+            ribbonCount      : 3,
+            strokeSize       : 0,
+            parallaxAmount   : -0.2,
+            animateSections  : true
+        },
+
+        HomeHeaderImage : [
+            
+                'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/image/header/home.jpg',
+            
+                'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/image/header/home.jpeg',
+            
+        ],
+        HomeBannerText  : '',
+
+        ArticleHeaderImage : [
+            
+                'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/image/header/article.jpg',
+            
+        ],
+
+        OtherBannerText : '',
+
+        MenuList : [
+            
+                {
+                    name   : '首页',
+                    href   : '/blog',    
+                    target : '',
+                    class  : ''
+                },
+            
+                {
+                    name   : '标签',
+                    href   : '/blog/tag',    
+                    target : '',
+                    class  : ''
+                },
+            
+                {
+                    name   : '分类',
+                    href   : '/blog/category',    
+                    target : '',
+                    class  : ''
+                },
+            
+                {
+                    name   : '赞赏',
+                    href   : '/blog/donate',    
+                    target : '',
+                    class  : ''
+                },
+            
+                {
+                    name   : '关于',
+                    href   : '/blog/about',    
+                    target : '',
+                    class  : ''
+                },
+            
+                {
+                    name   : '订阅',
+                    href   : '/blog/subscribe',    
+                    target : '_blank',
+                    class  : ''
+                },
+            
+                {
+                    name   : '搜索',
+                    href   : '',    
+                    target : '',
+                    class  : 'search'
+                },
+            
+                {
+                    name   : '留言板',
+                    href   : '/blog/comment',    
+                    target : '',
+                    class  : ''
+                },
+            
+                {
+                    name   : '友情链接',
+                    href   : '/blog/friend',    
+                    target : '',
+                    class  : ''
+                },
+            
+        ],
+        MenuLink : [
+            
+                
+                    {
+                        icon : 'icon-weibo', 
+                        url  : ''
+                    },
+                
+                    {
+                        icon : 'icon-wechat', 
+                        url  : ''
+                    },
+                
+                    {
+                        icon : 'icon-qq', 
+                        url  : ''
+                    },
+                
+                    {
+                        icon : 'icon-github', 
+                        url  : 'https://github.com/p0ny233'
+                    },
+                
+            
+        ],
+
+        FooterStyle : 2,
+        BottomText  : {
+            icon    : 'like-fill',
+            left    : '人生若只如初见',
+            right   : '何事秋风悲画扇'
+        },
+        ThemeInfo   : true,
+
+        ConsoleList : [
+            
+                
+                    [
+                        
+                            
+                                'Based on cnblogs theme SimpleMemory.',
+                            
+                                '',
+                            
+                        
+                    ],
+                
+                    [
+                        
+                            
+                                'SimpleMemory Author:',
+                            
+                                'BNDong',
+                            
+                        
+                    ],
+                
+                    [
+                        
+                            
+                                'Theme:',
+                            
+                                'LiveForCode',
+                            
+                        
+                    ],
+                
+            
+        ],
+
+        FontIconExtend : '',
+
+        Donate : {
+            paypal  : '',
+            bitcoin : '',
+            alipay  : 'https://s3.ax1x.com/2021/02/15/y601MQ.jpg',
+            wechat  : 'https://s3.ax1x.com/2021/02/15/y60aGT.jpg'
+        },
+
+        Code : {
+            style : 'normal'
+        },  
+
+        Search : {
+            applicationID : '65DY1OA18G',
+            apiKey        : 'b90b306f3270dc249b8052da157208ea',
+            indexName     : 'hexoBlog',
+            hits          : {
+                page : 10
+            },
+            labels        : {
+                placeholder : '搜索',
+                empty       : '未发现与 「${query}」 相关的内容',
+                stats       : '${hits} 条相关条目，使用了 ${time} 毫秒',
+            }
+        }, 
+
+        Valine : {
+            switch         : true,
+            el             : '.comments-content',
+            appId          : 'srhKtvWPQTWYKh3qX8G8M7v0-gzGzoHsz',
+            appKey         : '8uVSP1q6UlALVC5igYfIfv2h',
+            placeholder    : '你是我一生只会遇见一次的惊喜...',
+            avatar         : 'mm',
+            meta           : 'nick,mail,link',
+            requiredFields : 'nick,mail',
+            pageSize       : 5,
+            lang           : 'zh-cn',
+            visitor        : true,
+            enableQQ       : true
+        },
+
+        Tocbot : {
+            switch                : true,
+            tocSelector           : '.toc',
+            contentSelector       : '.article-body',
+            headingSelector       : 'h1, h2, h3, h4, h5',
+            headingsOffset        : 0,
+            scrollSmooth          : true,
+            scrollSmoothOffset    : -5,
+            positionFixedSelector : '.toc',
+            positionFixedClass    : 'toc-fixed',
+            fixedSidebarOffset    : '',
+        },
+
+        Require : {
+            baseUrl     : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/',
+            waitSeconds : 100
+        },
+
+        Music : {
+            type : 'APlayer'
+        },
+        APlayer : {
+            container : '.aplayer',
+            fixed     : true,
+            autoplay  : false,
+            loop      : 'all',
+            order     : 'random',
+            preload   : 'auto',
+            volume    : 0.67,
+            mutex     : true,
+            lrcType   : 3,
+            audio     : [
+                
+                    {
+                        name   : 'See You Again',
+                        artist : 'Charlie Puth, Wiz Khalifa',
+                        cover  : '/blog/music/cover/See You Again.jpg',
+                        url    : '/blog/music/song/See You Again.mp3',
+                        lrc    : '/blog/music/lrc/See You Again.lrc'
+                    },
+                
+                    {
+                        name   : '痴心绝对',
+                        artist : '李圣杰',
+                        cover  : '/blog/music/cover/痴心绝对.jpg',
+                        url    : '/blog/music/song/痴心绝对.mp3',
+                        lrc    : '/blog/music/lrc/痴心绝对.lrc'
+                    },
+                
+                    {
+                        name   : '好想大声说爱你',
+                        artist : '大黒摩季',
+                        cover  : '/blog/music/cover/好想大声说爱你.jpg',
+                        url    : '/blog/music/song/好想大声说爱你.mp3',
+                        lrc    : '/blog/music/lrc/好想大声说爱你.lrc'
+                    },
+                
+                    {
+                        name   : 'Baby',
+                        artist : 'Justin Bieber、Ludacris',
+                        cover  : '/blog/music/cover/Baby.jpg',
+                        url    : '/blog/music/song/Baby.mp3',
+                        lrc    : '/blog/music/lrc/Baby.lrc'
+                    },
+                
+                    {
+                        name   : '大风吹',
+                        artist : '王赫野',
+                        cover  : '/blog/music/cover/大风吹.jpg',
+                        url    : '/blog/music/song/大风吹.mp3',
+                        lrc    : '/blog/music/lrc/大风吹.lrc'
+                    },
+                
+                    {
+                        name   : '热爱105°C的你',
+                        artist : '阿肆',
+                        cover  : '/blog/music/cover/热爱105°C的你.jpg',
+                        url    : '/blog/music/song/热爱105°C的你.mp3',
+                        lrc    : '/blog/music/lrc/热爱105°C的你.lrc'
+                    },
+                
+                    {
+                        name   : '生命树',
+                        artist : '吴雨霏',
+                        cover  : '/blog/music/cover/生命树.jpg',
+                        url    : '/blog/music/song/生命树.mp3',
+                        lrc    : '/blog/music/lrc/生命树.lrc'
+                    },
+                
+            ]
+        },
+        Meting : {
+            id       : '3778678', 
+            lrcshow  : false, 
+            server   : 'netease', 
+            type     : 'playlist', 
+            fixed    : true, 
+            autoplay : false, 
+            loop     : 'all', 
+            order    : 'random', 
+            preload  : 'auto', 
+            volume   : 0.67, 
+            mutex    : true
+        },
+
+        LazyLoad : {
+            default : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/image/website/lazyload.svg'
+        },
+  
+        Style : {
+            aplayer          : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/APlayer.css',
+            archive          : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/archive.css',
+            donate           : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/donate.css',
+            fancybox         : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/jquery.fancybox.css',
+            footer           : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/footer.css',
+            iconfont         : 'https://at.alicdn.com/t/font_1546312_l3yohatebw.css',
+            index            : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/index.css',
+            menuBubble       : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/menu-bubble.css',
+            page             : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/page.css',
+            post             : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/post.css',
+            search           : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/search.css',
+            tocbot           : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/tocbot.css',
+            normal           : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/normal.css',
+            night            : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/night.css',
+            clipboard        : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/css/clipboard.css'
+        },
+
+        Script: {
+            aplayer          : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/APlayer.min.js',
+            config           : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/require.config.js',
+            index            : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config@1.0/hexo-liveforcode/static/js/index.js',
+            instantSearch    : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/instantsearch.min.js',
+            jQuery           : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/jquery-3.4.1.min.js',
+            loading          : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/loading.js',
+            meting           : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/Meting.min.js',
+            iscroll          : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/iscroll.js',
+            require          : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/js/require.min.js'
+        },
+
+        Font: {
+            LongCang   : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/LongCang.css',
+            Monda      : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/Monda.css',
+            NotoSansSC : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/NotoSansSC.css',
+            Playball   : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/Playball.css',
+            PTMono     : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/PTMono.css',
+            RobotoSlab : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/RobotoSlab.css',
+            Rosario    : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/Rosario.css',
+            UbuntuMono : 'https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config/hexo-liveforcode/static/font/UbuntuMono.css'
+        },
+
+        Suffix : {
+            about : '简单地活着, 肆意又精彩.'
+        },
+            
+        Theme : {
+            url  : 'https://github.com/first19326/Hexo-LiveForCode',
+            name : 'p0ny'
+        }  
+    };
+</script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/p0ny233/hexo_blog_config@1.0/hexo-liveforcode/static/js/index.js"></script>
+</body>
+</html>

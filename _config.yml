@@ -100,7 +100,7 @@ ignore:
 plugins:
   hexo-generator-searchdb
 ## Themes: https://hexo.io/themes/
-theme: LiveForCode
+theme: jekyll-theme-cayman
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
